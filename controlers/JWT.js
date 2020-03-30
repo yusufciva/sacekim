@@ -11,7 +11,7 @@ const verify = (data, callback) => {
     });
 };
 const create = (data, callback) => {
-    let secret = process.env.JWT_SECRET_KEY;
+    let secret = "SacEkimi_Gizli_Ama_Gizli_Salt_Tuz_Sifre";
     jwt.sign(data, secret, (err, token) => {
         if (!err) {
             callback(token);

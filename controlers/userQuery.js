@@ -34,10 +34,10 @@ const forgetPass = (username, callback) => {
                     <ul style="list-style-type:none;">
                         <li>Kullanıcı Adı: `+ userData.username + `</li>
                         <li>Kullanıcı Şifresi: `+ userData.password + `</li>
-                        <li>Giriş için <a href="`+ process.env.MAIN_PAGE + `">TIKLAYINIZ</a></li>
+                        <li>Giriş için <a href="http://localhost/">TIKLAYINIZ</a></li>
                     </ul>
             `;
-                sistemMail.sendMail(userData.email, process.env.PROJECT_NAME, html, (sendMailData) => {
+                sistemMail.sendMail(userData.email, "ONLİNE SAÇ EKİM SİTESİ", html, (sendMailData) => {
                     if (!sendMailData.status) {
                         callback({ status: "Şifre hatırlatma bilgileri gönderilemedi.Lütfen yetkili ile irtibata geçerek durumu bildiriniz." })
                     }
