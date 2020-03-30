@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-let env = process.env;
 mongoose.connect('mongodb://yusuf:gizlisifre@localhost:27017/sacEkim?authSource=admin', { autoIndex: false, useNewUrlParser: true, useUnifiedTopology: true, });
 var db = mongoose.connection;
 db.on('error', () => {
