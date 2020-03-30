@@ -38,7 +38,6 @@ const middleware = (req, res, next) => {
                 });
             }
             else {
-                console.log(dataVerify);
                 //jwt doğrulanmadıysa
                 res.clearCookie('ucid');
                 res.redirect('/');
