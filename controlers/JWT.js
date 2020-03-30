@@ -13,9 +13,11 @@ const verify = (data, callback) => {
 const create = (data, callback) => {
     jwt.sign(data, secret, (err, token) => {
         if (!err) {
+            console.log(1);
             callback(token);
         }
         else {
+            console.log(2);
             callback(false);//Olaki bir hata oluşursa
         };
     });
