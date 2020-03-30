@@ -1,0 +1,13 @@
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #666666;
+}
+body img {
+  height: 100%;
+  width: 100%;
+}

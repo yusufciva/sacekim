@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Saç Ekim Merkezi Yönetim Paneli</title>
+
+    <link rel="stylesheet" href="/public/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" href="/public/css/font-icons/entypo/css/entypo.css">
+    <link rel="stylesheet" href="/public/css/font-icons/font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/neon-core.css">
+    <link rel="stylesheet" href="/public/css/neon-theme.css">
+    <link rel="stylesheet" href="/public/css/neon-forms.css">
+    <link rel="stylesheet" href="/public/css/jquery-confirm.min.css">
+    <link rel="stylesheet" href="/public/css/custom.css">
+    <link rel="stylesheet" href="/public/css/icheckAll.css">
+    <link href="/public/css/jsTree/style.min.css" rel="stylesheet">
+    <link href="/public/css/quill.snow.css" rel="stylesheet">
+    <link href="/public/css/daterangepicker.css" rel="stylesheet">
+    <link href="/public/css/backdrop.css" rel="stylesheet">
+    <script src="/public/js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body class="page-body page-fade-only" style="overflow: scroll;">
+    <div class="page-container">
+        <div class="sidebar-menu">
+            <div class="sidebar-menu-fixed">
+                <header class="logo-env">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="/">
+                            <img height="156" width="118" src="/public/images/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <!-- logo collapse icon -->
+                    <div class="sidebar-collapse">
+                        <a href="#" class="sidebar-collapse-icon">
+                            <!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+                            <i class="entypo-menu"></i>
+                        </a>
+                    </div>
+                    <!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+                    <div class="sidebar-mobile-menu visible-xs">
+                        <a href="#" class="with-animation">
+                            <!-- add class "with-animation" to support animation -->
+                            <i class="entypo-menu"></i>
+                        </a>
+                    </div>
+                </header>
+                <ul id="main-menu" class="main-menu">
+                    <li class="root-level">
+                        <a href="/yonetim">
+                            <i class="fa fa-home"></i>
+                            <span class="title">Ana Sayfa</span>
+                        </a>
+                    </li>
+                    <%-menuHTML%>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row">
+                <div id="positionDiv"></div>
+                <!-- Profile Info and Notifications -->
+                <div class="col-md-6 col-sm-8 clearfix">
+                    <ul class="user-info pull-left pull-none-xsm">
+                        <!-- Profile Info -->
+                        <li class="profile-info dropdown">
+                            <!-- add class "pull-right" if you want to place this from right -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img style="margin-left: 1%;" height="44" width="44" src="<%=userlogo%>" alt="" class="img-circle" />
+                                <span id="uname"><%-username%> <%-usersurname%></span>
+                                
+                            </a>
+                            <sub style="margin-left:<%=titleLeft%>px; margin-top:5%; clear: both; float: left;"><%=userTitle%></sub>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Language and Logout  -->
+                <div class="col-md-6 col-sm-4 clearfix hidden-xs">
+                    <ul class="list-inline links-list pull-right">
+                        <li>
+                            <a href="#">
+                                <span id="logoutText">Çıkış Yap</span>
+                                <i class="entypo-logout right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <!-- Loader -->
+            <div id="loaderDiv" style="display:none; height: 100%; width:100%;">
+                <img style="margin-left:32%; margin-top: 8%;" src="/public/images/small-load.gif" />
+            </div>
+            <div id="mainPage">
+                <%
+                    if(userType == 1 || userType == 2)
+                    {
+                %>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-4">
+
+                        <div class="tile-stats tile-red">
+                            <div class="icon"><i class="entypo-users"></i></div>
+                            <div class="num" data-start="0" data-end="<%=kullanici%>" data-postfix=""
+                                data-duration="1500" data-delay="0">0</div>
+                            <h3>Aktif Kullanıcı</h3>
+                            <p>Sistemde kayıtlı aktif kullanıcı sayısı.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <%
+                    };
+                %>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/public/js/system/library/moment.min.js"></script>
+    <script src="/public/js/cookies.min.js"></script>
+    <script src="/public/js/system/lang.js"></script>
+    <link href="/public/css/slimselect.min.css" rel="stylesheet">
+    <script src="/public/js/system/library/slimselect.js"></script>
+    <script src="/public/js/system/library/quill.js"></script>
+
+
+
+    <link rel="stylesheet" href="/public/js/datatables/datatables.css">
+    <link rel="stylesheet" href="/public/js/select2/select2-bootstrap.css">
+    <link rel="stylesheet" href="/public/js/select2/select2.css">
+
+
+    <script src="/public/js/gsap/TweenMax.min.js"></script>
+    <script src="/public/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+    <script src="/public/js/bootstrap.js"></script>
+    <script src="/public/js/joinable.js"></script>
+    <script src="/public/js/resizeable.js"></script>
+    <script src="/public/js/neon-api.js"></script>
+
+
+    <script src="/public/js/datatables/datatables.js"></script>
+    <script src="/public/js/select2/select2.js"></script>
+    <script src="/public/js/jquery.inputmask.bundle.js"></script>
+
+
+
+    <script src="/public/js/neon-custom.js"></script>
+
+
+
+    <script src="/public/js/neon-demo.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/js/system/library/jquery-confirm.min.js"></script>
+    <script src="/public/js/toastr.js"></script>
+    <script src="/public/js/system/library/icheck.js"></script>
+    <script src="/public/js/system/library/daterangepicker.js"></script>
+    <script src="/public/js/system/library/popper.min.js"></script>
+    <script src="/public/js/system/library/tippy-bundle.iife.min.js"></script>
+    <script src="/public/js/system/library/pdfmake.js"></script>
+    <script src="/public/js/system/library/vfs_fonts.js"></script>
+
+    <script src="/public/js/system/sacEkim/helpIconTexts.js"></script>
+    <script src="/public/js/system/toastrOptions.js"></script>
+    <script src="/public/js/system/tools.js"></script>
+    <script src="/public/js/system/sacEkim/socketKullaniciGoruntule.js"></script>
+    <script src="/public/js/system/sacEkim/socketBilgilerim.js"></script>
+    <script src="/public/js/system/sacEkim/socketIletisimBilgileri.js"></script>
+    <script src="/public/js/system/sacEkim/socketSifreDegistir.js"></script>
+    <script src="/public/js/system/sacEkim/socketEmailTanimlama.js"></script>
+    <script src="/public/js/system/sacEkim/socketGenelAyarlamalar.js"></script>
+    <script src="/public/js/system/sacEkim/socketAnasayfaSlider.js"></script>
+    <script src="/public/js/system/sacEkim/socketHizmetYorumlari.js"></script>
+    <script src="/public/js/system/sacEkim/socketOncesiSonrasi.js"></script>
+    <script src="/public/js/system/sacEkim/socketBlogYazilari.js"></script>
+    <script src="/public/js/system/sacEkim/socketIletisimTalebi.js"></script>
+    <script src="/public/js/system/sacEkim/socketSacAnalizTalebi.js"></script>
+    <script src="/public/js/system/sacEkim/socketIletisimKayitlari.js"></script>
+    <script src="/public/js/system/sacEkim/socketSacAnaliziKayitlari.js"></script>
+</body>
+
+</html>

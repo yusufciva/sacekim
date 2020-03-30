@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thinx: Online education system." />
+    <meta name="author" content="Thinx group" />
+
+    <title>Saç Ekim Merkezi Yönetim Paneli | Giriş</title>
+    <!-- thinx css -->
+    <link rel="stylesheet" href="/public/css/notiflix-1.6.0.min.css">
+    <!-- thinx css -->
+
+    <link rel="stylesheet" href="/public/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" href="/public/css/font-icons/entypo/css/entypo.css">
+    <link rel="stylesheet" href="/public/css/font-icons/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/neon-core.css">
+    <link rel="stylesheet" href="/public/css/neon-theme.css">
+    <link rel="stylesheet" href="/public/css/neon-forms.css">
+
+    <script src="/public/js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body class="page-body login-page login-form-fall">
+
+    <div class="login-container">
+
+        <div class="login-header login-caret">
+
+            <div class="login-content">
+
+                <a href="#" class="logo">
+                    <img height="156" width="118" src="/public/images/logo.png" alt="" />
+                </a>
+
+                <p id="loginDescription" class="description">SAÇ EKİM MERKEZİ YÖNETİM PANELİ</p>
+
+                <!-- progress bar indicator -->
+                <div class="login-progressbar-indicator">
+                    <h3></h3>
+                    <span id="loginLoginIn"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="login-progressbar">
+            <div></div>
+        </div>
+
+        <div class="login-form">
+
+            <div class="login-content">
+
+                <form method="post" role="form" id="form_login">
+
+                    <div class="form-group">
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="entypo-user"></i>
+                            </div>
+
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Kullanıcı Adı"
+                                autocomplete="off" spellcheck="false" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="entypo-key"></i>
+                            </div>
+
+                            <input type="password" class="form-control" name="password" id="password"
+                                placeholder="Şifre" autocomplete="off" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block btn-login">
+                            <span id="btnLogin">Oturum Aç</span>
+                            <i class="entypo-login"></i>
+                        </button>
+                    </div>
+
+                </form>
+
+
+                <div class="login-bottom-links">
+
+                    <a id="linkForgetPass" href="/forgetPass" class="link">Şifremi Unuttum</a>
+            
+                    <br />
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Thinx scripts -->
+    <script src="/public/js/toastr.js"></script>
+    <script src="/public/js/cookies.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/js/system/library/cookie.js"></script>
+    <script src="/public/js/system/login.js"></script>
+    <!-- Thinx scripts end -->
+
+    <!-- Bottom scripts (common) -->
+	<script src="/public/js/gsap/TweenMax.min.js"></script>
+	<script src="/public/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+	<script src="/public/js/bootstrap.js"></script>
+	<script src="/public/js/joinable.js"></script>
+	<script src="/public/js/resizeable.js"></script>
+	<script src="/public/js/neon-api.js"></script>
+	<script src="/public/js/jquery.validate.min.js"></script>
+	<!-- <script src="/public/js/neon-login.js"></script> -->
+
+
+	<!-- JavaScripts initializations and stuff -->
+	<script src="/public/js/neon-custom.js"></script>
+
+
+	<!-- Demo Settings -->
+	<script src="/public/js/neon-demo.js"></script>
+
+</body>
+
+</html>

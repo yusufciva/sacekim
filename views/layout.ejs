@@ -1,0 +1,217 @@
+<%if(yonetim == 1) {%>
+<%-body%>
+<%} else {%>
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" href="/public/images/iconfinder_hat_22_2875612.ico" />
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/animate.css">
+    <link rel="stylesheet" href="/public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/public/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/public/css/magnific-popup.css">
+    <link rel="stylesheet" href="/public/css/aos.css">
+    <link rel="stylesheet" href="/public/css/css/ionicons.min.css">
+    <link rel="stylesheet" href="/public/css/bootstrap-3.4.1.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+    <link rel="stylesheet" href="/public/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/public/css/font-icons/entypo/css/entypo.css">
+    <link rel="stylesheet" href="/public/css/font-icons/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/jquery.steps.css">
+    <link rel="stylesheet" href="/public/js/select2/select2-bootstrap.css">
+    <link rel="stylesheet" href="/public/js/select2/select2.css">
+    <link rel="stylesheet" href="/public/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <title><%-baslik1%> <%-baslik2%>  - Saç Ekim Merkezi</title>
+    <meta name="title" content="Sa Ekim Merkezi">
+    <meta name="description" content="Saç dökülmesi, günümüzde erken yaşlarda başlayan önemli bir sorundur. Saçların incelmesi ve ön saç çizgisinin gerilemesi şeklinde başlayan saç dökülmesinde ana faktör; erkeklerde genetik, kadınlarda ise hormonal sebepler ve bazı hastalıklardır.Saç ekimi çeşitli yöntemlerle yapılmaktadır. Yöntem doktor ve hasta tarafından ortak olarak belirlenmektedir. Saç ekimi fiyatları için hemen bizi arayabilirsiniz.">
+    <meta name="keywords" content="traşsız saç ekimi, kadın saç ekimi, saç ekim yöntemleri, istanbul saç ekim merkezi, kaş ekimi, saç ekimi en çok sorulan sorular, saç ekimi öncesi ve sonrası">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="Engin KANMAZ">
+</head>
+
+<body>
+<div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" /></svg></div>
+    <nav class="navbar py-4 navbar-expand-lg svkn_navbar-light bg-light flex-row">
+        <div class="container">
+            <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
+                <div class="col-lg-2 pr-4 align-items-center">
+                    <a class="navbar-brand" style="color:black" href="/"><%-baslik1%> <span><%-baslik2%></span></a>
+                </div>
+                <div class="col-lg-10 d-none d-md-block">
+                    <div class="row d-flex">
+                        <div class="col-md-4 pr-4 d-flex topper align-items-center">
+                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center">
+                                <a href="https://wa.me/90<%-telefon%>">
+                                    <i style="font-size:32px; color:green" class="fa fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <span id="homeTitleWp" class="text"></span>
+                        </div>
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center">
+                                <a href="/iletisim">
+                                    <i style="font-size:32px; color:green" class="fa fa-edit"></i>
+                                </a>
+                            </div>
+                            <span id="homeTitleContact" class="text"></span>
+                        </div>
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center">
+                                <a id="phoneNumber" name="<%-telefon%>" href="tel://90<%-telefon%>">
+                                    <i style="font-size:32px; color:green" class="fa fa-phone-square"></i>
+                                </a>
+                            </div>
+                            <span class="text">
+                                <span id="homeTitleCall"></span>
+                                <b>
+                                    <h4><a href="tel://90<%-telefon%>">+90<%-telefon%></a> </h4>
+                                </b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg svkn-navbar-dark bg-dark" id="navbar">
+        <div class="container d-flex align-items-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-list"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <select id="languageSelector" class="selectpicker" style="outline: 0px; border:0px"
+                            data-width="fit">
+                            <option id="lang-tr" data-content='<span class="flag-icon flag-icon-tr"></span> Türkçe'
+                                value="Türkçe">Türkçe</option>
+                            <option class="active" id="lang-en"
+                                data-content='<span class="flag-icon flag-icon-us"></span> English' value="English">
+                                English</option>
+                            <option id="lang-es" data-content='<span class="flag-icon flag-icon-mx"></span> Español'
+                                value="Español">
+                                Español</option>
+                            <option id="lang-fr" data-content='<span class="flag-icon flag-icon-fr"></span> Français'
+                                value="Français">
+                                Français
+                            </option>
+                            <option id="lang-de" data-content='<span class="flag-icon flag-icon-de"></span> Deutsch'
+                                value="Deutsch">
+                                Deutsch</option>
+                            <option id="lang-it" data-content='<span class="flag-icon flag-icon-it"></span> Italiano'
+                                value="Italiano">
+                                Italiano
+                            </option>
+                            <option id="lang-ar" data-content='<span class="flag-icon flag-icon-ae"></span> العربية'
+                                value="العربية">
+                                العربية</option>
+                            <option id="lang-pt" data-content='<span class="flag-icon flag-icon-pt"></span> Português'
+                                value="Português">
+                                Português
+                            </option>
+                            <option id="lang-ru" data-content='<span class="flag-icon flag-icon-ru"></span> Pусский'
+                                value="Pусский">
+                                Pусский</option>
+                        </select>
+                    </li>
+                    <li class="nav-item"><a id="homeBannerSSS" href="/sss" class="nav-link"></a></li>
+                    <li class="nav-item"><a id="homeBannerBlog" href="/blog" class="nav-link"></a></li>
+                    <li class="nav-item"><a id="homeBannerContact" href="/iletisim" class="nav-link"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <%-body%>
+
+    <footer class="svkn-footer bg-dark svkn-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="svkn-footer-widget mb-5">
+                        <h2 class="svkn-heading-2 svkn-logo"><%-baslik1%> <span><%-baslik2%></span></h2>
+                        <p id="homeFooterFirstText"></p>
+                    </div>
+                    <div class="svkn-footer-widget mb-5">
+                        <h2 id="homeFooterHaveAQuestion" class="svkn-heading-2"></h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon ion-md-help"></span>
+                                    <span id="homeFooterWpText" class="text"></span></li>
+                                <li><span class="icon ion-md-tablet-portrait"></span><span class="text">
+                                        <a href="tel:90<%-telefon%>">+90<%-telefon%></a></span></li>
+                                <li><a href="/iletisim"><span class="icon ion-md-mail-open"></span><span
+                                            class="text"><%-eposta%></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="svkn-footer-widget mb-5 ml-md-4">
+                        <h2 id="homeFooterLinks" class="ftco-heading-2"></h2>
+                        <ul class="list-unstyled">
+                            <li><a href="/"><span class="ion-ios-arrow-round-forward mr-2"></span><label
+                                        id="homeFooterHomepage"></label></a></li>
+                            <li><a href="/sss"><span class="ion-ios-arrow-round-forward mr-2"></span><label
+                                        id="homeFooterSSS"></label></a>
+                            </li>
+                            <li><a href="/blog"><span class="ion-ios-arrow-round-forward mr-2"></span><label
+                                        id="homeFooterBlog"></label></a>
+                            </li>
+                            <li><a href="/iletisim"><span class="ion-ios-arrow-round-forward mr-2"></span><label
+                                        id="homeFooterContact"></label></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="svkn-footer-widget mb-5 ml-md-4">
+                        <h2 id="homeFooterServices" class="svkn-heading-2"></h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span><span id="footerMethods1"></span></a>
+                            </li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span><span id="footerMethods2"></span></a>
+                            </li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span><span id="footerMethods3"></span></a></li>
+                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span><span id="footerMethods4"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="svkn-footer-widget mb-5">
+                        <h2 id="homeFooterCookiePolicy" class="svkn-heading-2"></h2>
+                        <p id="homeFooterCookiePolicyText" class="open-hours pl-4"></p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/js/jquery-1.11.3.min.js"></script>
+    <script src="/public/js/bootstrap4.min.js"></script>
+    <script src="/public/js/cookies.min.js"></script>
+    <script src="/public/js/system/homeLang.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="/public/js/jquery.waypoints.min.js"></script>
+    <script src="/public/js/jquery.stellar.min.js"></script>
+    <script src="/public/js/owl.carousel.min.js"></script>
+    <script src="/public/js/jquery.magnific-popup.min.js"></script>
+    <script src="/public/js/aos.js"></script>
+    <script src="/public/js/bootstrap-select.min.js"></script>
+    <script src="/public/js/jquery.steps.min.js"></script>
+    <script src="/public/js/select2/select2.js"></script>
+    <script src="/public/js/intlTelInput.js"></script>
+    <script src="/public/js/toastr.js"></script>
+    <script src="/public/js/scrollax.min.js"></script>
+    <script src="/public/js/system/main.js"></script>
+</body>
+
+</html>
+<%}%>

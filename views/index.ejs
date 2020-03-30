@@ -1,0 +1,430 @@
+<div id="analiz" class="analizwizard bg-gray">
+    <i id="hideShowAnaliz" class="fa fa-chevron-down"></i>
+    <div style="display:inline" id="step1">
+        <div id="step1Header">
+            <button id="oneMinuteAnalizOpened" class="analizHeader"></button>
+        </div>
+        <div id="step1">
+            <img class="genderImg genderMale rounded-circle" src="/public/images/home/analizMan.png" />
+            <img class="genderImg genderWoman rounded-circle" src="/public/images/home/analizWoman.png" />
+            <p id="step1Text"></p>
+        </div>
+    </div>
+    <div style="display:none" id="headerAnaliz1">
+            <h4 id="headerAnaliz1H4" class="headerDokulme"></h4>
+            <hr>
+    </div>
+    <div id="step2" class="col-md-12" style="display: none;">
+        <div class="dokulmeErkek">
+            <img class="selectTip" src="/public/images/home/male/12x.png" />
+            <img class="selectTip" src="/public/images/home/male/22x.png" />
+            <img class="selectTip" src="/public/images/home/male/32x.png" />
+        </div>
+        <div class="dokulmeErkek">
+            <img class="selectTip" src="/public/images/home/male/42x.png" />
+            <img class="selectTip" src="/public/images/home/male/52x.png" />
+            <img class="selectTip" src="/public/images/home/male/62x.png" />
+        </div>
+        <div class="dokulmeErkek">
+            <img class="selectTip" src="/public/images/home/male/72x.png" />
+            <img class="selectTip" src="/public/images/home/male/82x.png" />
+            <img class="selectTip" src="/public/images/home/male/92x.png" />
+        </div>
+        <div style="display:inline" class="dokulmeKadin">
+            <img class="selectTip" src="/public/images/home/female/12x.png" />
+            <img class="selectTip" src="/public/images/home/female/22x.png" />
+            <img class="selectTip" src="/public/images/home/female/32x.png" />
+        </div>
+        <div style="display:inline" class="dokulmeKadin">
+            <img class="selectTip" src="/public/images/home/female/42x.png" />
+            <img class="selectTip" src="/public/images/home/female/52x.png" />
+            <img class="selectTip" src="/public/images/home/female/62x.png" />
+        </div>
+        <div id="prevButtons">
+            <button class="bottom-left prevBtn" name="goTo1"></button>
+            <button id="notSureBtn"></button>
+        </div>
+    </div>
+    <div style="display:none" id="headerAnaliz2" class="headerAnaliz">
+        <h4 id="yasH4" class="headerYas"></h4>
+        <hr>
+    </div>
+    <div id="step3" style="display: none;">
+        <button class="yasBtn">18-25</button>
+        <button class="yasBtn">26-35</button>
+        <button class="yasBtn">36-45</button>
+        <button class="yasBtn">45+</button>
+    </div>
+    <div style="display: none;" id="prevButtons1" class="prevButtons">
+        <button class="bottom-left prevBtn"></button>
+    </div>
+    <div style="display:none" id="headerAnaliz3" class="headerAnaliz">
+        <h4 id="ilacH4"></h4>
+        <hr>
+    </div>
+    <div id="step4" style="display: none;">
+        <button id="ilacHayirBtn" class="yasBtn"></button>
+        <button id="ilacEvetBtn" class="yasBtn"></button>
+        <input id="ilacEvet" maxlength="100" class="ilacInput input-spinner" placeholder="" type="text" />
+        <button id="ilacInputEvet" class="nextBtn1"></button>
+    </div>
+    <div style="display: none;" id="prevButtons2" class="prevButtons">
+        <button class="bottom-left prevBtn"></button>
+    </div>
+    <div style="display:none" id="headerAnaliz4" class="headerAnaliz">
+        <h3 id="hastalikH4" class="headerYas"></h3>
+        <hr>
+    </div>
+    <div id="step5" style="display: none;">
+        <button id="btnHIV" class="yasBtn2"></button>
+        <button id="btnHepatit" class="yasBtn2"></button>
+        <button id="btnKalp" class="yasBtn2"></button>
+        <button id="btnHastalikYok" class="yasBtn2"></button>
+    </div>
+    <div style="display: none;" id="prevButtons3">
+        <button class="bottom-left prevBtn" name="goTo4"></button>
+    </div>
+    <div style="display:none" id="headerAnaliz5" class="headerAnaliz">
+        <h3 id="analizH3" class="headerYas"></h3>
+        <hr>
+    </div>
+    <div id="step6" style="display: none;">
+        <input id="phoneInput" placeholder="" type="text" />
+        <input id="analizInputNameSurname" class="ilacInput input-spinner" placeholder="" type="text" />
+        <input id="analizInputMail" class="ilacInput input-spinner" placeholder="" type="email" />
+        <button id="completeBtn"></button>
+    </div>
+    <div style="display: none;"  id="prevButtons4">
+        <button class="bottom-left prevBtn" name="goTo5"></button>
+    </div>
+    <div style="display:none" id="headerAnaliz6" class="headerAnaliz">
+        <h3 id="analizSuccess" class="headerYas"></h3>
+        <hr>
+    </div>
+    <div id="step7" style="display: none;">
+        <p id="completeText"></p>
+        <button id="closeBtn"></button>
+    </div>
+</div>
+<button style="display:none" id="oneMinuteAnalizClosed" class="analizHeader2"></button>
+<section id="homeSlider" class="home-slider owl-carousel">
+    <!-- <div class="slider-item" style="background-image:url(/public/images/home/hair.jpg);"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-start"
+                data-scrollax-parent="true">
+                <div class="col-md-6 text animate">
+                    <h1 class="mb-4">HER SAÇ EKİMİ YENİ BİR <span>TASARIMDIR!</span></h1>
+                    <h3 class="subheading">Siz de saç ekimi ile zaman kaybetmeden saçlarınızı geri kazanabilirsiniz.
+                    </h3>
+                    <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Daha fazlası..</a></p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="slider-item" style="background-image:url(/public/images/home/hair2.jpg);"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-start"
+                data-scrollax-parent="true">
+                <div class="col-md-6 text animate">
+                    <h1 class="mb-4">Saç Ekiminde <span>Modern Yöntemler</span></h1>
+                    <h3 class="subheading">Modern saç ekimi uygulaması ile doğal, kalıcı ve güvenilir sonuçlar...
+                    </h3>
+                    <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Daha fazlası..</a></p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</section>
+<section class="svkn-services no-pb">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-3 d-flex svkn-services align-self-stretch p-4 animate">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="ion-md-cut"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 id="indexMethodsHeader1" class="heading"></h3>
+                        <p id="indexMethodsText1"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex svkn-services align-self-stretch p-4 animate">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="ion-md-create"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 id="indexMethodsHeader2" class="heading"></h3>
+                        <p id="indexMethodsText2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex svkn-services align-self-stretch p-4 animate">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="ion-md-medkit"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 id="indexMethodsHeader3" class="heading"></h3>
+                        <p id="indexMethodsText3"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex svkn-services align-self-stretch p-4 animate">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="ion-md-alarm"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 id="indexMethodsHeader4" class="heading"></h3>
+                        <p id="indexMethodsText4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="svkn-section svkn-no-pt svkn-no-pb">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0"
+                style="background-image: url(/public/images/home/about.jpg);">
+            </div>
+            <div class="col-md-7 wrap-about py-4 py-md-5">
+                <div class="heading-section mb-5">
+                    <div class="pl-md-5 ml-md-5">
+                        <span id="homeIndexHairHk" class="subheading"></span>
+                        <h2 id="homeIndexHairHkText" class="mb-4" style="font-size: 28px;"></h2>
+                    </div>
+                </div>
+                <div class="pl-md-5 ml-md-5 mb-5">
+                    <p id="homeIndexHairHkLongText"></p>
+                    <div class="row mt-5 pt-2">
+                        <div class="col-lg-6">
+                            <div class="svkn-services-2 d-flex">
+                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center">
+                                    <span class="ion-md-cut"></span></div>
+                                <div class="text">
+                                    <h3 id="homeIndexUnshavenHeader"></h3>
+                                    <p id="homeIndexUnshavenHeaderText"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="svkn-services-2 d-flex">
+                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span
+                                        class="ion-md-woman"></span></div>
+                                <div class="text">
+                                    <h3 id="homeIndexWoman"></h3>
+                                    <p id="homeIndexWomanText"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="svkn-services-2 d-flex">
+                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span
+                                        class="ion-md-color-wand"></span></div>
+                                <div class="text">
+                                    <h3 id="homeIndexEyeBrow"></h3>
+                                    <p id="homeIndexEyeBrowText"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="svkn-services-2 d-flex">
+                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span
+                                        class="ion-ios-person"></span></div>
+                                <div class="text">
+                                    <h3 id="homeIndexBeardandMoustache"></h3>
+                                    <p id="homeIndexBeardandMoustacheText">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="svkn-intro" style="background-image: url(/public/images/home/home_bg.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h2 id="homeIndexHairAnalysis"></h2>
+                <p id="homeIndexHairAnalysisText" class="mb-0"></p>
+                <p></p>
+            </div>
+            <div class="col-md-3 d-flex align-items-center">
+                <p class="mb-0"><button id="homeIndexHairAnalysisFree"
+                        class="btn btn-secondary px-4 py-3"></button></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="svkn-section testimony-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-8 text-center heading-section">
+                <h2 id="homeIndexCommets" class="mb-4"></h2>
+                <p id="homeIndexCommetsText"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div id="commets" class="carousel-testimony owl-carousel">
+                    <!-- <div class="item">
+                        <div class="testimony-wrap d-flex">
+                            <div class="user-img mr-4" style="background-image: url(/public/images/home/person_1.jpg)">
+                            </div>
+                            <div class="text ml-2 bg-light">
+                                <span class="quote d-flex align-items-center justify-content-center">
+                                    <i class="icon-quote-left"></i>
+                                </span>
+                                <p>Saçlarımın bu denli sık ve gür olacağını hayal etmek bile zordu. Bunu gerçekten
+                                    başardılar. Kendilerine sonsuz teşekkürlerimi iletiyorum!</p>
+                                <p class="name">Veli Ahmet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap d-flex">
+                            <div class="user-img mr-4" style="background-image: url(/public/images/home/person_2.jpg)">
+                            </div>
+                            <div class="text ml-2 bg-light">
+                                <span class="quote d-flex align-items-center justify-content-center">
+                                    <i class="icon-quote-left"></i>
+                                </span>
+                                <p>Sakallarım için kendilerine ulaştık. Hizmetlerinden çok memnun kaldım. Gerçekten
+                                    profesyonel bir ekip!</p>
+                                <p class="name">Ahmet Veli</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="svkn-section testimony-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-8 text-center heading-section">
+                <h2 id="homeIndexBeforeAfter" class="mb-4"></h2>
+                <p id="homeIndexBeforeAfterText"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div id="beforeAfter" class="carousel-testimony owl-carousel">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/public/js/jquery-1.11.3.min.js"></script>
+<script src="/public/js/cookies.min.js"></script>
+<script>
+let IndexLang = navigator.language || navigator.userLanguage;
+if (!Cookies.get('lang')) {
+    if (IndexLang == 'tr') {
+        Cookies.set('lang', 'TR');
+        currentLang = 'TR';
+    }
+    else if (IndexLang == 'en') {
+        Cookies.set('lang', 'EN');
+        currentLang = 'EN';
+    }
+    else if (IndexLang == 'ru') {
+        Cookies.set('lang', 'RU');
+        currentLang = 'RU';
+    }
+    else if (IndexLang == 'fr') {
+        Cookies.set('lang', 'FR');
+        currentLang = 'FR';
+    }
+    else if (IndexLang == 'ar') {
+        Cookies.set('lang', 'AR');
+        currentLang = 'AR';
+    }
+    else if (IndexLang == 'pt') {
+        Cookies.set('lang', 'PT');
+        currentLang = 'PT';
+    }
+    else if (IndexLang == 'it') {
+        Cookies.set('lang', 'IT');
+        currentLang = 'IT';
+    }
+    else if (IndexLang == 'de') {
+        Cookies.set('lang', 'DE');
+        currentLang = 'DE';
+    }
+    else if (IndexLang == 'es') {
+        Cookies.set('lang', 'ES');
+        currentLang = 'ES';
+    }
+    else {
+        Cookies.set('lang', 'TR');
+        currentLang = 'TR';
+    };
+}
+    let homeSlider = <%-JSON.stringify(slider)%>;
+    let commets = <%-JSON.stringify(yorumlar)%>;
+    let beforeAfter = <%-JSON.stringify(beforeAfter)%>;
+    let lang = Cookies.get('lang');
+    for (let i = 0; i < homeSlider.length; i++) {
+        $("#homeSlider").append(`
+        <div class="slider-item" style="background-image: url(`+homeSlider[i].gorsel+`);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+                    <div class="col-md-6 text animate">
+                        <h1 class="mb-4"> `+ (lang == 'TR' ? homeSlider[i].baslikKisim1TR : (lang == 'EN' ? homeSlider[i].baslikKisim1EN : (lang == 'ES' ? homeSlider[i].baslikKisim1ES : (lang == 'FR' ? homeSlider[i].baslikKisim1FR : (lang == 'DE' ? homeSlider[i].baslikKisim1DE : (lang == 'IT' ? homeSlider[i].baslikKisim1IT : (lang == 'AR' ? homeSlider[i].baslikKisim1AR : (lang == 'PT' ? homeSlider[i].baslikKisim1PT : homeSlider[i].baslikKisim1RU)))))))) + ` <span>` + (lang == 'TR' ? homeSlider[i].baslikKisim2TR : (lang == 'EN' ? homeSlider[i].baslikKisim2EN : (lang == 'ES' ? homeSlider[i].baslikKisim2ES : (lang == 'FR' ? homeSlider[i].baslikKisim2FR : (lang == 'DE' ? homeSlider[i].baslikKisim2DE : (lang == 'IT' ? homeSlider[i].baslikKisim2IT : (lang == 'AR' ? homeSlider[i].baslikKisim2AR : (lang == 'PT' ? homeSlider[i].baslikKisim2PT : homeSlider[i].baslikKisim2RU)))))))) + `</span></h1>
+                        <h3 class="subheading">
+                            `+ (lang == 'TR' ? homeSlider[i].baslikKisim3TR : (lang == 'EN' ? homeSlider[i].baslikKisim3EN : (lang == 'ES' ? homeSlider[i].baslikKisim3ES : (lang == 'FR' ? homeSlider[i].baslikKisim3FR : (lang == 'DE' ? homeSlider[i].baslikKisim3DE : (lang == 'IT' ? homeSlider[i].baslikKisim3IT : (lang == 'AR' ? homeSlider[i].baslikKisim3AR : (lang == 'PT' ? homeSlider[i].baslikKisim3PT : homeSlider[i].baslikKisim3RU)))))))) + `
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        `);
+    };
+    for (let i = 0; i < commets.length; i++) {
+        $("#commets").append(`
+        <div class="item">
+            <div class="testimony-wrap d-flex">
+                <div class="user-img mr-4" style="background-image: url(`+commets[i].gorsel+`)">
+                </div>
+                <div class="text ml-2 bg-light">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                        <i class="icon-quote-left"></i>
+                     </span>
+                     <p>`+ (lang == 'TR' ? commets[i].hastaYorumTR : (lang == 'EN' ? commets[i].hastaYorumEN : (lang == 'ES' ? commets[i].hastaYorumES : (lang == 'FR' ? commets[i].hastaYorumFR : (lang == 'DE' ? commets[i].hastaYorumDE : (lang == 'IT' ? commets[i].hastaYorumIT : (lang == 'AR' ? commets[i].hastaYorumAR : (lang == 'PT' ? commets[i].hastaYorumPT : commets[i].hastaYorumRU)))))))) + `</p>
+                     <p class="name">`+commets[i].hastaAdi+`</p>
+                </div>
+            </div>
+        </div>
+        `);
+        };
+        for (let i = 0; i < beforeAfter.length; i++) {
+        $("#beforeAfter").append(`
+        <div class="item">
+            <div class="testimony-wrap d-flex justify-content-center">
+                <div class="ba-user-img mr-4" style="background-image: url(`+beforeAfter[i].before+`)">
+                </div>
+                <div class="ba-user-img mr-4"style="background-image: url(`+beforeAfter[i].after+`)">
+                </div>
+            </div>
+        </div>
+        `);
+        };
+</script>

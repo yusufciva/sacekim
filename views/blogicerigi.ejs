@@ -1,0 +1,105 @@
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/public/images/home/home_bg.jpg');"
+    data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+            <div class="col-md-9 text-center">
+                <h1 id="blogEntryHeader" class="mb-2 bread"></h1>
+                <p class="breadcrumbs">
+                    <span class="mr-2">
+                        <a href="/">
+                            <span id="blogEntryHaderHome"></span>
+                            <i class="ion-ios-arrow-forward"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="/blog">
+                            <span id="blogEntryHaderText"></span>
+                            <i class="ion-ios-arrow-forward"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <span id="blogEntryHaderText2"></span>
+                        <i class="ion-ios-arrow-forward"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="svkn-section justify-content-center">
+    <div class="container">
+        <div class="row">
+            <div id="blogText" class="col-md-12">
+                
+            </div> <!-- .col-md-8 -->
+        </div>
+    </div>
+</section>
+<div data-disable ="disabled" id="quills"></div>
+<link href="/public/css/quill.snow.css" rel="stylesheet">
+<script src="/public/js/jquery-1.11.3.min.js"></script>
+<script src="/public/js/cookies.min.js"></script>
+<script src="/public/js/system/library/quill.js"></script>
+<script src="/public/js/system/library/moment.min.js"></script>
+<script>
+let blogText = <%-JSON.stringify(blogYazisi)%>;
+let BlogsLang = navigator.language || navigator.userLanguage;
+let lang = Cookies.get('lang');
+if (!Cookies.get('lang')) {
+    if (BlogsLang == 'tr') {
+        Cookies.set('lang', 'TR');
+        currentLang = 'TR';
+    }
+    else if (BlogsLang == 'en') {
+        Cookies.set('lang', 'EN');
+        currentLang = 'EN';
+    }
+    else if (BlogsLang == 'ru') {
+        Cookies.set('lang', 'RU');
+        currentLang = 'RU';
+    }
+    else if (BlogsLang == 'fr') {
+        Cookies.set('lang', 'FR');
+        currentLang = 'FR';
+    }
+    else if (BlogsLang == 'ar') {
+        Cookies.set('lang', 'AR');
+        currentLang = 'AR';
+    }
+    else if (BlogsLang == 'pt') {
+        Cookies.set('lang', 'PT');
+        currentLang = 'PT';
+    }
+    else if (BlogsLang == 'it') {
+        Cookies.set('lang', 'IT');
+        currentLang = 'IT';
+    }
+    else if (BlogsLang == 'de') {
+        Cookies.set('lang', 'DE');
+        currentLang = 'DE';
+    }
+    else if (BlogsLang == 'es') {
+        Cookies.set('lang', 'ES');
+        currentLang = 'ES';
+    }
+    else {
+        Cookies.set('lang', 'TR');
+        currentLang = 'TR';
+    };
+};
+function quillGetHTML(inputDelta) {
+    var tempCont = document.createElement("div");
+    (new Quill(tempCont)).setContents(inputDelta);
+    return tempCont.getElementsByClassName("ql-editor")[0].innerHTML;
+}
+let quill = new Quill("#quills", {
+    theme: 'snow',
+    disable:true,
+    readOnly:true,
+    scrollingContainer: false
+});
+$("#blogText").html(quillGetHTML(quill.setContents((lang == 'TR' ? blogText.yaziTR : (lang == 'EN' ? blogText.yaziEN : (lang == 'ES' ? blogText.yaziES : (lang == 'FR' ? blogText.yaziFR : (lang == 'DE' ? blogText.yaziDE : (lang == 'IT' ? blogText.yaziIT : (lang == 'AR' ? blogText.yaziAR : (lang == 'PT' ? blogText.yaziPT : blogText.yaziRU)))))))))));
+$("#quills").remove();
+$(".ql-toolbar").remove();
+</script>
