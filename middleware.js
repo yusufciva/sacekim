@@ -8,7 +8,6 @@ const middleware = (req, res, next) => {
         JWT.verify(req.cookies['ucid'], (dataVerify) => {
             if (dataVerify.status) { // hata yoksa
                 userQuery.get(dataVerify.data, (dataUser) => {
-                    console.log(dataUser);
                     if (dataUser) {
                         moduleSettings.findOne({}).then((dataModule) => {
                             //Kullanıcı bilgileri veri tabanında kayıtlıysa
@@ -39,6 +38,7 @@ const middleware = (req, res, next) => {
                 });
             }
             else {
+                console.log(dataVerify);
                 //jwt doğrulanmadıysa
                 res.clearCookie('ucid');
                 res.redirect('/');
