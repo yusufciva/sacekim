@@ -40,7 +40,7 @@ const middleware = (req, res, next) => {
             }
             else {
                 //jwt doğrulanmadıysa
-                console.log("Hata jwt");
+                console.log(dataVerify);
                 res.clearCookie('ucid');
                 res.redirect('/');
             };
