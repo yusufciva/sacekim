@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const secret = "SacEkimi_Gizli_Ama_Gizli_Salt_Tuz_Sifre";
 const verify = (data, callback) => {
-    jwt.verify(data, process.env.JWT_SECRET_KEY, (err, decoded) => {
+    jwt.verify(data, secret, (err, decoded) => {
         if (err) {
             callback({ status: false });//Jwt çözülemedi hata var
         }
