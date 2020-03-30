@@ -1,5 +1,5 @@
 const menu = require('../models/menus');
-const schemaKullanici = require('../models/schemaKullanici');
+const schemaKullanici = require('../models/sacEkim/schemaKullanici');
 let menuArr = [
    {
       moduleName: 'sacEkim',
