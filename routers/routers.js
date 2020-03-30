@@ -8,22 +8,43 @@ const schemaBlogYazilari = require('../models/sacEkim/schemaBlogYazilari');
 
 router.get('/', (req, res) => {
     schemaGenelAyarlamalar.findOne({}).then((ayarlar) => {
-        schemaAnasayfaSlider.find({}).then((slider) => {
-            schemaHizmetYorumlari.find({}).then((yorumlar) => {
-                schemaOncesiSonrasi.find({}).then((beforeAfter) => {
-                    res.render('index', {
-                        yonetim: 0,
-                        baslik1: ayarlar.baslikKisim1,
-                        baslik2: ayarlar.baslikKisim2,
-                        telefon: ayarlar.telefon,
-                        eposta: ayarlar.eposta,
-                        slider,
-                        yorumlar,
-                        beforeAfter,
+        if (ayarlar) {
+            schemaAnasayfaSlider.find({}).then((slider) => {
+                schemaHizmetYorumlari.find({}).then((yorumlar) => {
+                    schemaOncesiSonrasi.find({}).then((beforeAfter) => {
+                        res.render('index', {
+                            yonetim: 0,
+                            baslik1: ayarlar.baslikKisim1,
+                            baslik2: ayarlar.baslikKisim2,
+                            telefon: ayarlar.telefon,
+                            eposta: ayarlar.eposta,
+                            slider,
+                            yorumlar,
+                            beforeAfter,
+                        });
                     });
                 });
             });
-        });
+        }
+        else {
+            schemaAnasayfaSlider.find({}).then((slider) => {
+                schemaHizmetYorumlari.find({}).then((yorumlar) => {
+                    schemaOncesiSonrasi.find({}).then((beforeAfter) => {
+                        res.render('index', {
+                            yonetim: 0,
+                            baslik1: "EKLENCEK",
+                            baslik2: "EKLENCEK",
+                            telefon: "EKLENCEK",
+                            eposta: "EKLENCEK",
+                            slider,
+                            yorumlar,
+                            beforeAfter,
+                        });
+                    });
+                });
+            });
+        }
+
     });
 });
 router.get('/iletisim', (req, res) => {
