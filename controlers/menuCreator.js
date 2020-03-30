@@ -1,4 +1,5 @@
 const menu = require('../models/menus');
+const schemaKullanici = require('../models/schemaKullanici');
 let menuArr = [
    {
       moduleName: 'sacEkim',
@@ -122,7 +123,40 @@ async function controlAndCreate() {
       };
    };
 };
-
+let ilkKullanici = new schemaKullanici({
+   "username": "yetkili",
+   "password": "13485655",
+   "userType": 1,
+   "fullName": "Yusuf CİVA",
+   "passportID": "12312312312",
+   "fathername": "Yönetici",
+   "mothername": "Yönetici",
+   "birthplace": "Yönetici",
+   "userlogo": "/public/images/users/1.png",
+   "email": "yusufciva123@gmail.com",
+   "address": "Yönetici ADRES",
+   "phonenumber1": "(555)-555-55-54",
+   "phonenumber2": "(555)-555-55-55",
+   "userTitle": "Sistem Yetkilisi",
+   "gender": "Erkek",
+   "status": true,
+   "editDate": "2020/02/02 17:33",
+   "editUser": "Yusuf CİVA"
+});
+schemaKullanici.find({}).then((data) => {
+   if (data.length < 1) {
+      ilkKullanici.save((err) => {
+         if (!err) {
+            console.warn("Sistem ilk defa ayağa kaldırıldığı için yönetici hesabı oluşturuldu.");
+            console.warn("Kullanıcı Adı:yetkili");
+            console.warn("Şifre:13485655");
+         }
+         else {
+            console.warn("İlk ayağa kaldırmada oluşturulmaya çalışılan kullanıcı hesabı oluşturmada hata meydana geldi!")
+         };
+      });
+   };
+});
 
 
 module.exports = { create, controlAndCreate };
