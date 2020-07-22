@@ -1,6 +1,5 @@
 // ENVIRONMENT VARIABLES //
 require('dotenv').config();
-let env = process.env;
 // SERVER //
 const express = require('express');
 const app = express();
@@ -164,7 +163,7 @@ const socketListener = [//Socket dinleyicilerini dinamik oluşturmak için
 moduleSettings.find({}).then((moduleOpt) => {
     if (moduleOpt.length == 0) {
         let newModuleOpt = new moduleSettings({
-            moduleName: process.env.MODULE_NAME
+            moduleName: "sacEkim"
         });
         newModuleOpt.save((err) => {
             if (!err) {
@@ -271,6 +270,6 @@ io.on('connection', (socket) => {
 });
 // SOCKET REQUESTS END //
 
-http.listen(env.PORT, () => {
-    console.log('Sunucu istekleri ' + env.PORT + ' üzerinden dinleniyor');
+http.listen(80, () => {
+    console.log('Sunucu istekleri ' + 80 + ' üzerinden dinleniyor');
 });

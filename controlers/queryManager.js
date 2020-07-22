@@ -6,7 +6,7 @@ let schemaAction = ['Kullanici','SistemMail',"GenelAyarlamalar","AnasayfaSlider"
 let schema = [];
 for (let i = 0; i < schemaAction.length; i++) {
     let key = schemaAction[i];
-    schema[key] = require('../models/'+process.env.MODULE_NAME+'/schema' + key + '');
+    schema[key] = require('../models/sacEkim/schema' + key + '');
 };
 const dataFormatCreator = (arr, format, callback) => {
     if (format) {
