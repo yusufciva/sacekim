@@ -179,11 +179,13 @@ const forTurkish = () => {
     langJSON['thAnasayfaSlider_baslikKisim2TR'] = "Başlık 2.Kısım TR";
     langJSON['thAnasayfaSlider_baslikKisim3TR'] = "Başlık 3.Kısım TR";
     langJSON['thAnasayfaSlider_gorsel'] = "Slider Görseli";
-    //Hizmet Yorumlari
-    langJSON['menuHizmetYorumlari'] = "Hizmet Yorumları";
-    langJSON['thHizmetYorumlari_gorsel'] = "Hasta Görseli";
-    langJSON['thHizmetYorumlari_hastaAdi'] = "Hasta Adı";
-    langJSON['thHizmetYorumlari_hastaYorumTR'] = "Yorumu TÜRKÇE";
+    //Ürünlerimiz
+    langJSON['menuUrunlerimiz'] = "Ürünler";
+    langJSON['thUrunlerimiz_gorsel'] = "Ürün Görseli";
+    langJSON['thUrunlerimiz_urunAdiTR'] = "Ürün Adı";
+    langJSON['thUrunlerimiz_yaziTR'] = "Ürün Yazısı TÜRKÇE";
+    langJSON['thUrunlerimiz_createUser'] = "Oluşturan";
+    langJSON['thUrunlerimiz_createDate'] = "Tarihi";
     //Oncesi Sonrasi
     langJSON['menuOncesiSonrasi'] = "Öncesi ve Sonrası";
     langJSON['thOncesiSonrasi_before'] = "Öncesi";

@@ -65,13 +65,13 @@ const pageSifreDegistir = require('./controlers/sacEkim/pageSifreDegistir');
 const pageEmailTanimlama = require('./controlers/sacEkim/pageEmailTanimlama');
 const pageGenelAyarlamalar = require('./controlers/sacEkim/pageGenelAyarlamalar');
 const pageAnasayfaSlider = require('./controlers/sacEkim/pageAnasayfaSlider');
-const pageHizmetYorumlari = require('./controlers/sacEkim/pageHizmetYorumlari');
 const pageOncesiSonrasi = require('./controlers/sacEkim/pageOncesiSonrasi');
 const pageBlogYazilari = require('./controlers/sacEkim/pageBlogYazilari');
 const pageIletisimTalebi = require('./controlers/sacEkim/pageIletisimTalebi');
 const pageSacAnalizTalebi = require('./controlers/sacEkim/pageSacAnalizTalebi');
 const pageIletisimKayitlari = require('./controlers/sacEkim/pageIletisimKayitlari');
 const pageSacAnaliziKayitlari = require('./controlers/sacEkim/pageSacAnaliziKayitlari');
+const pageUrunlerimiz = require('./controlers/sacEkim/pageUrunlerimiz');
 
 // SOCKET REQUESTS //
 const socketListener = [//Socket dinleyicilerini dinamik oluşturmak için
@@ -118,12 +118,6 @@ const socketListener = [//Socket dinleyicilerini dinamik oluşturmak için
         permissions: [1]
     },
     {
-        schemaName: 'HizmetYorumlari',
-        manager: pageHizmetYorumlari,
-        process: { Click: true, Insert: true, Delete: true },
-        permissions: [1]
-    },
-    {
         schemaName: 'OncesiSonrasi',
         manager: pageOncesiSonrasi,
         process: { Click: true, Insert: true, Delete: true },
@@ -159,12 +153,18 @@ const socketListener = [//Socket dinleyicilerini dinamik oluşturmak için
         process: { Click: true },
         permissions: [1]
     },
-    
+    {
+        schemaName: 'Urunlerimiz',
+        manager: pageUrunlerimiz,
+        process: { Click: true, Insert: true, Delete: true },
+        permissions: [1]
+    },
+
 ];
 moduleSettings.find({}).then((moduleOpt) => {
     if (moduleOpt.length == 0) {
         let newModuleOpt = new moduleSettings({
-            moduleName: "sacEkim"
+            moduleName: process.env.MODULE_NAME
         });
         newModuleOpt.save((err) => {
             if (!err) {
@@ -271,6 +271,6 @@ io.on('connection', (socket) => {
 });
 // SOCKET REQUESTS END //
 
-http.listen(80, () => {
-    console.log('Sunucu istekleri 80 üzerinden dinleniyor');
+http.listen(env.PORT, () => {
+    console.log('Sunucu istekleri ' + env.PORT + ' üzerinden dinleniyor');
 });

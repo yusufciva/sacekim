@@ -188,40 +188,8 @@ let footerMethods1;
 let footerMethods2;
 let footerMethods3;
 let footerMethods4;
-let footerMethods5;
-
-let homeBannerHizmetler;
-let homeBannerUrunlerimiz;
-let sloganText;
-let sloganSubText;
-let pageHizmetlerText;
-let pageHizmetlerText2;
-let pageHizmetlerText3;
-let hizmetlerText1;
-let hizmetlerText2;
-let hizmetlerText3;
-let hizmetlerText4;
-let hizmetlerText5;
-
-let urunlerimizHeader;
-let urunlerimizHeaderSub;
 
 const forTurkish = () => {
-
-    homeBannerHizmetler = "Hizmetler";
-    homeBannerUrunlerimiz = "Ürünlerimiz";
-    sloganText = "Saç Ekimi ile Yeni Bir Başlangıç Yapın";
-    sloganSubText = "MAXİMUM GREFT / %100 SONUÇ / HİJYENİK";
-    pageHizmetlerText = "HİZMETLER";
-    pageHizmetlerText2 = "Klinik Hizmetlerimiz";
-    pageHizmetlerText3 = "Sağladığımız hizmetler hakkında aşağıda bulunan sekmelerden bilgi edinebilir, merak ettiğiniz soruları bize iletişim kanallarımız üzerinden sorabilirsiniz.";
-    hizmetlerText1 = "Saç kaybına uğramış kişilere yeni saçları en doğal ve kalıcı olarak kazandırmanın yolu saç ekimidir. Saç ekiminde dökülen bölgeye, hastanın kendi sağlıklı saçları eklenmektedir. Eklenecek saçların alındığı bölge yapı olarak saç dökülmesi yaşanmayan bir bölgedir. Saç ekimi uygulaması ile kişiye kendi saçları hiç dökülmemiş gibi kalıcı olarak kazandırılmaktadır. Saç ekiminde amacımız; kişiye modern tıbbi uygulamalarla konforlu bir şekilde doğal saçlı görünümü tekrar sağlamaktır. Bir çok method ile saç ekimi hizmetini sizlere sunmaktayız.";
-    hizmetlerText2 = "Sakalların çıktığı bölgelerde sakal çıkmaması ya da yoğunluğun düşük olması durumunda vücudun başka bölgelerinden alınan kıl köklerinin ekilmesi operasyonuna sakal ekimi adı verilmektedir. Son on yıldır sakal ekimi operasyonlarının uygulanma sıklığında büyük artışlar gözlenmiştir. Uygulama sıklığının artmasıyla beraber de sakal ekimine dair çok daha fazla araştırma ve geliştirme faaliyeti başlamıştır. Sakal Ekimi hizmetimiz hakkında bize sorularınızı iletebilirsiniz.";
-    hizmetlerText3 = "Kaşlar insan yüzünün göz, burun, dudak ve elmacık kemikleri gibi en karakteristik bölümlerinden biridir. Bu bölümler arasındaki uyum ise kişilerin altın oran dediğimiz kusursuz bir görünüme ulaşmalarını sağlayabilmektedir. Kaş ekimi operasyonu, dökülme ya da genetik özelliklere bağlı olarak kaşsız kalan bölgeye, donör bölgeden alınan saç köklerinin nakil edilmesi işlemidir. Kaş dökülmeleri, genellikle uzun süre aynı bölgeden kaş alımı yapılması, saç kıran (alopesi areata) vb. kıl kökünü tutan çeşitli cilt hastalıkları, kalıcı makyaj uygulamaları, kemoterapi tedavisi gibi nedenlerle oluşabilmektedir. Kaş Ekimi hizmetimiz hakkında bize sorularınızı iletebilirsiniz.";
-    hizmetlerText4 = "Yediğimiz besinlerin sindirimini sağlayan en önemli organlarımızdan birisi dişlerimizdir. Tabi bunun dışında estetik olarak da güzel olması konuşmamız ve yüz güzelliğimiz açısından oldukça önemlidir. Hayatımızda her şeyin ömrü olduğu gibi dişlerimizin de bir ömrü vardır. Fakat dişlerimize gereği kadar baktığımız takdirde dişlerimizi çok kolay ve kısa sürede kaybedebiliriz. Diş Tedavisi hizmetlerimiz hakkında daha detaylı bilgi için bizimle iletişime geçebilirsiniz.";
-    hizmetlerText5 = "Plastik cerrahi (plastik ve rekonstrüktif cerrahi), bir vücut kısmının veya karakteristiğinin görünümünü yeniden yapılandırmak veya değiştirmek için yapılan her türlü ameliyatı ifade eder. Plastik cerrahide plastik kelimesinin yapay anlamına geldiği gibi yaygın bir yanlış anlaşılma vardır. Aksine, kelime kalıplama veya form verme anlamına gelen eski Yunanca plastikos kelimesinden gelmektedir. Plastik cerrahi, hem kişinin görünümündeki düzelme hem de hastalık, travma veya doğum bozukluklarından kaynaklanan yüz ve vücut dokusu kusurlarının rekonstrüksiyonunda yer alan cerrahi bir uzmanlık alanıdır. Plastik cerrahi hizmetlerimiz hakkında daha detaylı bilgi için bizimle iletişime geçebilirsiniz.";
-    urunlerimizHeader = "ÜRÜNLERİMİZ";
-    urunlerimizHeaderSub = "Ürünlerimiz";
     //common veriables
     btnFinish = "Tamamla";
     btnBext = "İleri";
@@ -235,7 +203,7 @@ const forTurkish = () => {
     homeTitleCall = "Bizi Arayın!";
     //home banner
     homeBannerSSS = "Çok Sorulanlar";
-    homeBannerBlog = "Saç Ekimine Dair";
+    homeBannerBlog = "Estetiğe Dair";
     homeBannerContact = "İletişim";
     //home footer
     homeFooterFirstText = "Uzun süredir saç ekim alanında hizmet veren, profesyonel kadrosuyla hizmetinizde.";
@@ -244,7 +212,7 @@ const forTurkish = () => {
     homeFooterLinks = "Yönlendirmeler";
     homeFooterHomepage = "Anasayfa";
     homeFooterSSS = "Çok sorulanlar";
-    homeFooterBlog = "Saç Ekimine Dair";
+    homeFooterBlog = "Estetiğe Dair";
     homeFooterContact = "İletişim";
     homeFooterServices = "Hizmetler"
     homeFooterCookiePolicy = "Çerez politikası";
@@ -311,13 +279,13 @@ const forTurkish = () => {
     hairHeader2 = "Analiz Sonrası Size Geri Dönüş Sağlayalım";
     analizAd = "Adınız ve Soyadınız..";
     analizTel = "Telefon Numaranız..";
-    indexMethodsHeader1 = "FUE Methodu";
+    indexMethodsHeader1 = "Tıraşsız FUE Tekniği";
     indexMethodsText1 = "Standart FUE tekniğiyle bire bir aynı adımların izlendiği bu yöntem ile traşa gerek kalmadan saç ekim işleminizi kolaylıkla yaptırabilirsiniz.";
-    indexMethodsHeader2 = "DHI Metodu";
+    indexMethodsHeader2 = "DHI Saç Ekim Tekniği";
     indexMethodsText2 = "DHI Saç Ekimi metodu ile tek tek toplanılan saç köklerinin otomatik Choi implanter kalemleriyle daha sık ekilmesine olanak sağlar.";
-    indexMethodsHeader3 = "Sapphire FUE";
+    indexMethodsHeader3 = "Magic Saphire System";
     indexMethodsText3 = "Sonra yazılacak Sonra yazılacak Sonra yazılacak Sonra yazılacak Sonra yazılacak Sonra yazılacak";
-    indexMethodsHeader4 = "Tıraşsız FUE";
+    indexMethodsHeader4 = "Hiperbarik Saç Ekimi";
     indexMethodsText4 = "Hiperbarik saç ekimi, ekim sonrasında iyileşme sürecini hızlandıran ve saç köklerini güçlendiren bir tedavi yöntemidir.";
 
     contactLimitErr = "Lütfen iletişim talebinizin üzerinden biraz süre geçmesini bekleyiniz.";
@@ -347,11 +315,10 @@ const forTurkish = () => {
     analizSuccess = "Analiz Başarıyla Tamamlandı!";
     completeText = "Bilgileriniz tarafımıza ulaştı. İlettiğiniz bilgiler doğrultusunda size en kısa sürede geri dönüş sağlayacağız.";
     closeBtn = "KAPAT";
-    footerMethods1 = "SAÇ EKİMİ";
-    footerMethods2 = "SAKAL EKİMİ";
+    footerMethods1 = "TIRAŞSIZ SAÇ EKİMİ";
+    footerMethods2 = "KADIN SAÇ EKİMİ";
     footerMethods3 = "KAŞ EKİMİ";
-    footerMethods4 = "DİŞ TEDAVİSİ";
-    footerMethods5 = "Plastik Cerrahi";
+    footerMethods4 = "SAKAL VE BIYIK EKİMİ";
     //Blog
     blogEntryHeader = "SAÇ EKİMİNE DAİR";
     blogEntryHaderHome = "ANASAYFA";
@@ -359,21 +326,6 @@ const forTurkish = () => {
     blogEntryHaderText2 = "YAZI";
 };
 const forEnglish = () => {
-    homeBannerHizmetler = "Services";
-    homeBannerUrunlerimiz = "Our products";
-    sloganText = "Started with a New Hair";
-    sloganSubText = "MAXIMUM GRAFT / 100% CONCLUSION / HYGIENIC";
-    pageHizmetlerText = "SERVICES";
-    pageHizmetlerText2 = "Our Clinical Services";
-    pageHizmetlerText3 = "You can learn about the tabs below we provide services, you're curious you can ask questions to us via our communication channels.";
-    hizmetlerText1 = "The way to equip those who have suffered hair loss as the most natural and permanent new hair is hair transplantation. Hair transplantation in the spill zone, is added to the patient's own healthy hair. as building area where the hair is to add a region not experiencing hair loss. people own hair with hair like no unwritten practice is gaining a permanent basis. Hair transplantation in our goal-haired people naturally look comfortably furnished with modern medical practice is to repeat. We provide the service with a lot of hair transplantation methods to you.";
-    hizmetlerText2 = "Facial beard areas where the exit out of the body or case of low density planting hair follicles are taken from other parts of beard sowing name in operation. significant increases were observed in the frequency of application of the last decade beard transplant operation. With the increasing frequency of administration has started a lot more research and development activities regarding the beard October. You can send us your questions about our service Beard October.";
-    hizmetlerText3 = "Human face eye brows, nose, one of the most characteristic parts such as lips and cheekbones. The harmony between these sections can be enabled people to reach a perfect view of what we call the golden ratio. Eyebrow operation, loss and genetic features depending Kass remaining region is that it is transferred from the hair follicles of the donor operation. Loss of eyebrows, eyebrows usually made purchases from the same area for a long time, breaking hair (alopecia areata) and so on. holding the root hairs of various skin diseases, application of permanent make-up can occur for reasons such as chemotherapy. You can send us your questions about our service Eyebrow Transplant.";
-    hizmetlerText4 = "our most important organ of the digestion of the foods we eat one of our teeth. Of course, we talk also be aesthetically beautiful out of it and his face is very important in terms of our beauty. our teeth as well as the life of everything in our lives, there is a life. But if we look at our teeth, our teeth as required very easily and can lose in a short time. You can contact us for more detailed information about our dental treatment services.";
-    hizmetlerText5 = "Plastic surgery (plastic and reconstructive surgery), to reconstruct the view of a body part or characteristic, or any means to change operation performed. as it comes to an artificial sense of the word plastic in plastic surgery There is a widespread misunderstanding. On the contrary, the word comes from the ancient Greek form of molding or word meaning plastikos not. Plastic surgery, as well as improvement in disease and the person's appearance, facial trauma or surgery and is located in an area of ​​expertise in the reconstruction of body tissue defects due to birth defects. You can contact us for more detailed information about our plastic surgery services.";
-    urunlerimizHeader = "OUR PRODUCTS";
-    urunlerimizHeaderSub = "Our products";
-
     btnFinish = "Complete";
     btnBext = "Further";
     btnPrevious = "Previous";
@@ -383,7 +335,7 @@ const forEnglish = () => {
     homeTitleContact = "Submit your information and we will call you.";
     homeTitleCall = "Call us!";
     homeBannerSSS = "Frequently Asked";
-    homeBannerBlog = "Regarding Hair Transplantation";
+    homeBannerBlog = "About Aesthetics";
     homeBannerContact = "Contact";
     homeFooterFirstText = "It is at your service with its professional staff that has been serving in the field of hair transplantation for a long time.";
     homeFooterHaveAQuestion = "Have a Question?";
@@ -391,7 +343,7 @@ const forEnglish = () => {
     homeFooterLinks = "referrals";
     homeFooterHomepage = "Home page";
     homeFooterSSS = "Frequently asked";
-    homeFooterBlog = "Regarding Hair Transplantation";
+    homeFooterBlog = "About Aesthetics";
     homeFooterContact = "Contact";
     homeFooterServices = "Services";
     homeFooterCookiePolicy = "Cookie policy";
@@ -454,13 +406,13 @@ const forEnglish = () => {
     hairHeader2 = "Let's Get Back To You After Analysis";
     analizAd = "Name and Surname..";
     analizTel = "Your telephone number..";
-    indexMethodsHeader1 = "FUE Method";
+    indexMethodsHeader1 = "Unshaved FUE Technique";
     indexMethodsText1 = "You can easily make your hair transplantation process without the need for shaving with this method";
     indexMethodsHeader2 = "DHI Method";
     indexMethodsText2 = "The DHI Hair Transplantation method allows hair follicles collected individually to be transplanted more frequently with automatic Choi implanter pens.";
-    indexMethodsHeader3 = "Sapphire FUE";
+    indexMethodsHeader3 = "Magic Saphire System";
     indexMethodsText3 = "Will be written later";
-    indexMethodsHeader4 = "Unshaved FUE";
+    indexMethodsHeader4 = "Hyperbaric Hair Transplantation";
     indexMethodsText4 = "Hyperbaric hair transplantation is a treatment method that accelerates the healing process and strengthens the hair follicles after transplantation.";
     contactLimitErr = "Please wait a little while to pass out your contact request.";
     contactSuccess = "Contact Your request has been successfully";
@@ -489,11 +441,10 @@ const forEnglish = () => {
     analizSuccess = "Analysis Successful!";
     completeText = "Your information has been received by us. We will provide you with the information you transmit return as soon as possible.";
     closeBtn = "CLOSE";
-    footerMethods1 = "HAIR TRANSPLANT";
-    footerMethods2 = "BEARD TRANSPLANTATION";
-    footerMethods3 = "EYEBROW TRANSPLANTATION";
-    footerMethods4 = "DENTAL TREATMENT";
-    footerMethods5 = "PLASTIC SURGERY";
+    footerMethods1 = "Unshaven HAIR TRANSPLANT";
+    footerMethods2 = "WOMEN'S HAIR TRANSPLANT";
+    footerMethods3 = "KAS TRANSPLANT";
+    footerMethods4 = "Beard and Mustache Transplantation";
     blogEntryHeader = "HAIR ON THE OCTOBER";
     blogEntryHaderHome = "HOME PAGE";
     blogEntryHaderText = "HAIR ON THE OCTOBER";
@@ -501,21 +452,6 @@ const forEnglish = () => {
 
 };
 const forEspanol = () => {
-    homeBannerHizmetler = "Servicios";
-    homeBannerUrunlerimiz = "Nuestros productos";
-    sloganText = "Comenzó con un cabello nuevo";
-    sloganSubText = "INJERTO MÁXIMO / 100% CONCLUSIÓN / HIGIÉNICO";
-    pageHizmetlerText = "SERVICIOS";
-    pageHizmetlerText2 = "Nuestros servicios clínicos";
-    pageHizmetlerText3 = "Puede obtener información sobre las pestañas a continuación que brindamos servicios, tiene curiosidad de hacernos preguntas a través de nuestros canales de comunicación.";
-    hizmetlerText1 = "La forma de equipar a aquellos que han sufrido la pérdida de cabello como el cabello nuevo más natural y permanente es el trasplante de cabello. El trasplante de cabello en la zona del derrame se agrega al cabello sano del paciente. como área de construcción donde el cabello debe agregar una región que no experimenta pérdida de cabello. las personas poseen cabello con cabello como ninguna práctica no escrita está ganando una base permanente. El trasplante de cabello en nuestra gente de cabello meta naturalmente se ve cómodamente equipado con la práctica médica moderna es repetir. Le brindamos el servicio con muchos métodos de trasplante de cabello.";
-    hizmetlerText2 = "Las áreas faciales de la barba donde la salida del cuerpo o el caso de los folículos pilosos de baja densidad se toman de otras partes del nombre de siembra de barba en funcionamiento. Se observaron aumentos significativos en la frecuencia de aplicación de la operación de trasplante de barba de la última década. Con la frecuencia cada vez mayor de la administración ha comenzado muchas más actividades de investigación y desarrollo con respecto a la barba de octubre. Puede enviarnos sus preguntas sobre nuestro servicio Beard October.";
-    hizmetlerText3 = "Cara humana, cejas, nariz, una de las partes más características como los labios y los pómulos. La armonía entre estas secciones puede permitir a las personas alcanzar una vista perfecta de lo que llamamos la proporción áurea. La operación de la ceja, la pérdida y las características genéticas que dependen de la región restante de Kass es que se transfiere desde los folículos pilosos de la operación del donante. Pérdida de cejas, las cejas generalmente hicieron compras en la misma área durante mucho tiempo, se rompieron el cabello (alopecia areata), etc. sosteniendo los pelos de raíz de varias enfermedades de la piel, la aplicación de maquillaje permanente puede ocurrir por razones como la quimioterapia. Puede enviarnos sus preguntas sobre nuestro servicio de Trasplante de cejas.";
-    hizmetlerText4 = "Nuestro órgano más importante de la digestión de los alimentos que comemos es uno de nuestros dientes. Por supuesto, también hablamos de ser estéticamente bello y su rostro es muy importante en términos de nuestra belleza. Nuestros dientes, así como la vida de todo en nuestras vidas, hay una vida. Pero si miramos nuestros dientes, nuestros dientes se requieren con mucha facilidad y pueden perder en poco tiempo. Puede contactarnos para obtener información más detallada sobre nuestros servicios de tratamiento dental.";
-    hizmetlerText5 = "Cirugía plástica (cirugía plástica y reconstructiva), para reconstruir la vista de una parte del cuerpo o característica, o cualquier medio para cambiar la operación realizada. en lo que respecta a un sentido artificial de la palabra plástico en cirugía plástica Existe un malentendido generalizado. Por el contrario, la palabra proviene de la antigua forma griega de moldeo o palabra que significa plastikos no. La cirugía plástica, así como la mejora de la enfermedad y la apariencia de la persona, trauma facial o cirugía, se encuentra en un área de experiencia en la reconstrucción de defectos del tejido corporal debido a defectos congénitos. Puede contactarnos para obtener información más detallada sobre nuestros servicios de cirugía plástica.";
-    urunlerimizHeader = "NUESTROS PRODUCTOS";
-    urunlerimizHeaderSub = "Nuestros productos";
-
     btnFinish = "completo";
     btnBext = "adelante";
     btnPrevious = "anterior";
@@ -525,7 +461,7 @@ const forEspanol = () => {
     homeTitleContact = "Envíe su información y lo llamaremos.";
     homeTitleCall = "Llamanos!";
     homeBannerSSS = "Preguntas frecuentes";
-    homeBannerBlog = "Sobre el trasplante capilar";
+    homeBannerBlog = "Sobre estética";
     homeBannerContact = "comunicación";
     homeFooterFirstText = "Está a su servicio con su personal profesional que ha estado sirviendo en el campo del trasplante de cabello durante mucho tiempo.";
     homeFooterHaveAQuestion = "Tiene una pregunta";
@@ -533,7 +469,7 @@ const forEspanol = () => {
     homeFooterLinks = "referencias";
     homeFooterHomepage = "casa";
     homeFooterSSS = "Preguntas frecuentes";
-    homeFooterBlog = "Sobre el trasplante capilar";
+    homeFooterBlog = "Sobre estética";
     homeFooterContact = "comunicación";
     homeFooterServices = "servicios";
     homeFooterCookiePolicy = "Política de cookies";
@@ -596,13 +532,13 @@ const forEspanol = () => {
     hairHeader2 = "Volvamos a usted después del análisis";
     analizAd = "Su nombre y apellido.";
     analizTel = "Tu numero de telefono ..";
-    indexMethodsHeader1 = "Método FUE";
+    indexMethodsHeader1 = "Técnica FUE sin afeitar";
     indexMethodsText1 = " Puede realizar fácilmente el proceso de trasplante de cabello sin la necesidad de afeitarse con este método";
     indexMethodsHeader2 = " Método DHI";
     indexMethodsText2 = " El método de trasplante capilar DHI permite que los folículos capilares recolectados individualmente se trasplanten con más frecuencia con los implantes automáticos Choi.";
-    indexMethodsHeader3 = "Zafiro FUE";
+    indexMethodsHeader3 = "Sistema de zafiro mágico";
     indexMethodsText3 = " Será escrito más tarde";
-    indexMethodsHeader4 = " FUE non rasée";
+    indexMethodsHeader4 = " Trasplante de cabello hiperbárico";
     indexMethodsText4 = " El trasplante de cabello hiperbárico es un método de tratamiento que acelera el proceso de curación y fortalece los folículos capilares después del trasplante.";
     contactLimitErr = "Por favor, espere un momento para pasar a cabo su solicitud de contacto.";
     contactSuccess = "Contacto Su solicitud ha sido exitosamente";
@@ -631,11 +567,10 @@ const forEspanol = () => {
     analizSuccess = "Análisis! Exitosa";
     completeText = "Su información ha sido recibida por nosotros. Le proporcionaremos la información que transmiten regresar tan pronto como sea posible.";
     closeBtn = "CERRAR";
-    footerMethods1 = "TRANSPLANTE DE CABELLO";
-    footerMethods2 = "TRASPLANTE DE BARBA";
+    footerMethods1 = "TRASPLANTE DE PELO sin afeitar";
+    footerMethods2 = "TRASPLANTE DE PELO LA MUJER";
     footerMethods3 = "TRASPLANTE KAS";
-    footerMethods4 = "TRATAMIENTO DENTAL";
-    footerMethods5 = "CIRUGÍA PLÁSTICA";
+    footerMethods4 = "Trasplante de barba y bigote";
     blogEntryHeader = "PELO EN OCTUBRE";
     blogEntryHaderHome = "INICIO";
     blogEntryHaderText = "PELO EN OCTUBRE";
@@ -643,21 +578,6 @@ const forEspanol = () => {
 
 };
 const forFrancais = () => {
-    homeBannerHizmetler = "Prestations de service";
-    homeBannerUrunlerimiz = "Nos produits";
-    sloganText = "Commencé avec un nouveau cheveu";
-    sloganSubText = "GRAFT MAXIMUM / CONCLUSION À 100% / HYGIÉNIQUE";
-    pageHizmetlerText = "PRESTATIONS DE SERVICE";
-    pageHizmetlerText2 = "Nos services cliniques";
-    pageHizmetlerText3 = "Vous pouvez en apprendre davantage sur les onglets ci-dessous nous fournissons des services, vous êtes curieux de pouvoir nous poser des questions via nos canaux de communication.";
-    hizmetlerText1 = "La greffe de cheveux est le moyen d'équiper ceux qui ont subi une perte de cheveux en tant que nouveaux cheveux les plus naturels et permanents. La greffe de cheveux dans la zone de déversement est ajoutée aux cheveux sains du patient. comme zone de construction où les cheveux doivent ajouter une région ne subissant pas de perte de cheveux. les gens possèdent des cheveux avec des cheveux comme aucune pratique non écrite ne gagne une base permanente. La greffe de cheveux chez nos personnes aux cheveux de but semble naturellement confortablement meublée avec la pratique médicale moderne est à répéter. Nous vous fournissons le service avec de nombreuses méthodes de greffe de cheveux.";
-    hizmetlerText2 = "Les zones de la barbe du visage où la sortie du corps ou le cas de la plantation de follicules pileux de faible densité sont prélevés sur d'autres parties du nom de semis de barbe en fonctionnement. des augmentations significatives ont été observées dans la fréquence d'application de l'opération de greffe de barbe de la dernière décennie. Avec la fréquence croissante de l'administration a commencé beaucoup plus d'activités de recherche et développement concernant la barbe Octobre. Vous pouvez nous envoyer vos questions sur notre service Beard October.";
-    hizmetlerText3 = "Visage humain, sourcils, nez, l'une des parties les plus caractéristiques comme les lèvres et les pommettes. L'harmonie entre ces sections peut permettre aux gens d'atteindre une vision parfaite de ce que nous appelons le nombre d'or. L'opération des sourcils, la perte et les caractéristiques génétiques dépendant de la région restante de Kass sont qu'elles sont transférées des follicules pileux de l'opération du donneur. Perte de sourcils, les sourcils effectuaient généralement des achats dans la même zone pendant une longue période, cassant les cheveux (alopécie areata), etc. tenant les poils radiculaires de diverses maladies de la peau, l'application d'un maquillage permanent peut survenir pour des raisons telles que la chimiothérapie. Vous pouvez nous envoyer vos questions sur notre service Greffe de sourcils.";
-    hizmetlerText4 = "notre organe le plus important de la digestion des aliments que nous mangeons une de nos dents. Bien sûr, on parle aussi d'en être esthétiquement beau et son visage est très important au regard de notre beauté. nos dents ainsi que la vie de tout dans nos vies, il y a une vie. Mais si nous regardons nos dents, nos dents le nécessitent très facilement et peuvent perdre en peu de temps. Vous pouvez nous contacter pour plus d'informations sur nos services de soins dentaires.";
-    hizmetlerText5 = "Chirurgie plastique (chirurgie plastique et reconstructive), pour reconstruire la vue d'une partie du corps ou d'une caractéristique, ou tout moyen pour modifier l'opération réalisée. comme il s'agit d'un sens artificiel du mot plastique en chirurgie plastique Il y a un malentendu généralisé. Au contraire, le mot vient de la forme grecque antique de moulage ou mot signifiant plastikos pas. La chirurgie plastique, ainsi que l'amélioration de la maladie et de l'apparence de la personne, des traumatismes faciaux ou de la chirurgie, se situe dans un domaine d'expertise dans la reconstruction des défauts des tissus corporels dus à des malformations congénitales. Vous pouvez nous contacter pour des informations plus détaillées sur nos services de chirurgie plastique.";
-    urunlerimizHeader = "NOS PRODUITS";
-    urunlerimizHeaderSub = "Nos produits";
-
     btnFinish = "complet";
     btnBext = "avant";
     btnPrevious = "précédent";
@@ -667,7 +587,7 @@ const forFrancais = () => {
     homeTitleContact = "Soumettez vos informations et nous vous appellerons.";
     homeTitleCall = "Appelez-nous!";
     homeBannerSSS = "Foire aux questions";
-    homeBannerBlog = "Concernant la greffe de cheveux";
+    homeBannerBlog = "À propos de l'esthétique";
     homeBannerContact = "communication";
     homeFooterFirstText = "Elle est à votre service avec son personnel professionnel qui intervient depuis longtemps dans le domaine de la greffe de cheveux.";
     homeFooterHaveAQuestion = "Vous avez une question?";
@@ -675,7 +595,7 @@ const forFrancais = () => {
     homeFooterLinks = "références";
     homeFooterHomepage = "maison";
     homeFooterSSS = "Foire aux questions";
-    homeFooterBlog = "Concernant la greffe de cheveux";
+    homeFooterBlog = "À propos de l'esthétique";
     homeFooterContact = "communication";
     homeFooterServices = "services";
     homeFooterCookiePolicy = "Politique de cookies";
@@ -738,13 +658,13 @@ const forFrancais = () => {
     hairHeader2 = "Revenons à vous après l'analyse";
     analizAd = "Votre nom et prénom ..";
     analizTel = "Votre numéro de téléphone ..";
-    indexMethodsHeader1 = "Méthode FUE";
+    indexMethodsHeader1 = "Technique FUE non rasée";
     indexMethodsText1 = " Vous pouvez facilement effectuer votre processus de greffe de cheveux sans avoir besoin de vous raser avec cette méthode";
     indexMethodsHeader2 = " Méthode DHI";
     indexMethodsText2 = " La méthode de transplantation capillaire DHI permet de transplanter plus fréquemment les follicules pileux collectés individuellement avec des stylos implanteurs automatiques Choi.";
-    indexMethodsHeader3 = "Saphir FUE";
+    indexMethodsHeader3 = "Système Magic Saphire";
     indexMethodsText3 = " Sera écrit plus tard";
-    indexMethodsHeader4 = " FUE non rasée";
+    indexMethodsHeader4 = " Greffe de cheveux hyperbare";
     indexMethodsText4 = " La greffe de cheveux hyperbare est une méthode de traitement qui accélère le processus de guérison et renforce les follicules pileux après la transplantation.";
     contactLimitErr = "S'il vous plaît attendre un peu de temps pour passer votre demande de contact.";
     contactSuccess = "Contact Votre demande a bien été";
@@ -773,11 +693,10 @@ const forFrancais = () => {
     analizSuccess = "Analyse réussie!";
     completeText = "Vos informations ont été reçues par nous. Nous vous fournirons les informations que vous transmettez retour le plus tôt possible.";
     closeBtn = "PROCHE";
-    footerMethods1 = "GREFFE DE CHEVEUX";
-    footerMethods2 = "TRANSPLANTATION DE BARBE";
-    footerMethods3 = "TRANSPLANTATION DES SOURCILS";
-    footerMethods4 = "TRAITEMENT DENTAIRE";
-    footerMethods5 = "CHIRURGIE PLASTIQUE";
+    footerMethods1 = "Unshaven CHEVEUX TRANSPLANTATION";
+    footerMethods2 = "FEMMES CHEVEUX TRANSPLANTATION";
+    footerMethods3 = "KAS TRANSPLANTATION";
+    footerMethods4 = "Barbe et moustache transplantation";
     blogEntryHeader = "CHEVEUX SUR OCTOBRE";
     blogEntryHaderHome = "ACCUEIL";
     blogEntryHaderText = "CHEVEUX SUR OCTOBRE";
@@ -785,21 +704,6 @@ const forFrancais = () => {
 
 };
 const forDeutsch = () => {
-    homeBannerHizmetler = "Dienstleistungen";
-    homeBannerUrunlerimiz = "Unsere Produkte";
-    sloganText = "Begonnen mit einem neuen Haar";
-    sloganSubText = "MAXIMALES GRAFT / 100% SCHLUSSFOLGERUNG / HYGIENISCH";
-    pageHizmetlerText = "DIENSTLEISTUNGEN";
-    pageHizmetlerText2 = "Unsere klinischen Dienstleistungen";
-    pageHizmetlerText3 = "Sie können sich über die folgenden Registerkarten informieren, die wir anbieten. Sie sind neugierig, dass Sie uns über unsere Kommunikationskanäle Fragen stellen können.";
-    hizmetlerText1 = "Der Weg, diejenigen, die unter Haarausfall leiden, als das natürlichste und dauerhafteste neue Haar auszustatten, ist die Haartransplantation. Eine Haartransplantation in der Überlaufzone wird dem eigenen gesunden Haar des Patienten hinzugefügt. als Gebäudebereich, in dem das Haar eine Region hinzufügen soll, in der kein Haarausfall auftritt. Menschen besitzen Haare mit Haaren, als ob keine ungeschriebene Praxis eine dauerhafte Basis gewinnt. Haartransplantation bei unseren zielhaarigen Menschen sieht natürlich bequem eingerichtet aus mit moderner medizinischer Praxis ist zu wiederholen. Wir bieten Ihnen den Service mit vielen Haartransplantationsmethoden.";
-    hizmetlerText2 = "Gesichtsbartbereiche, in denen der Austritt aus dem Körper oder der Fall von Haarfollikeln mit geringer Pflanzdichte aus anderen Teilen des Bartaussaatnamens entnommen wird, die in Betrieb sind. Bei der Häufigkeit der Anwendung der Barttransplantation im letzten Jahrzehnt wurden signifikante Erhöhungen beobachtet. Mit der zunehmenden Häufigkeit der Verabreichung haben viel mehr Forschungs- und Entwicklungsaktivitäten in Bezug auf den Bart Oktober begonnen. Sie können uns Ihre Fragen zu unserem Service Bart Oktober senden.";
-    hizmetlerText3 = "Menschliches Gesicht Augenbrauen, Nase, einer der charakteristischsten Teile wie Lippen und Wangenknochen. Die Harmonie zwischen diesen Abschnitten kann es den Menschen ermöglichen, eine perfekte Sicht auf das zu erreichen, was wir den Goldenen Schnitt nennen. Augenbrauenoperation, Verlust und genetische Merkmale in Abhängigkeit von der verbleibenden Region in Kass bestehen darin, dass sie von den Haarfollikeln der Spenderoperation übertragen werden. Verlust von Augenbrauen, Augenbrauen kauften normalerweise lange Zeit in derselben Gegend, brachen Haare (Alopecia areata) und so weiter. Wenn die Wurzelhaare verschiedener Hauterkrankungen gehalten werden, kann die Anwendung von Permanent Make-up aus Gründen wie der Chemotherapie erfolgen. Sie können uns Ihre Fragen zu unserem Service Augenbrauentransplantation senden.";
-    hizmetlerText4 = "Unser wichtigstes Organ für die Verdauung der Lebensmittel essen wir einen unserer Zähne. Natürlich reden wir auch ästhetisch schön daraus und sein Gesicht ist sehr wichtig für unsere Schönheit. Unsere Zähne sowie das Leben von allem in unserem Leben gibt es ein Leben. Aber wenn wir auf unsere Zähne schauen, sind unsere Zähne nach Bedarf sehr leicht und können in kurzer Zeit verlieren. Sie können uns kontaktieren, um detailliertere Informationen über unsere zahnärztlichen Behandlungen zu erhalten.";
-    hizmetlerText5 = "Plastische Chirurgie (plastische und rekonstruktive Chirurgie), um die Ansicht eines Körperteils oder einer Eigenschaft zu rekonstruieren oder um die durchgeführte Operation zu ändern. Wenn es um einen künstlichen Sinn des Wortes Plastik in der plastischen Chirurgie geht, gibt es ein weit verbreitetes Missverständnis. Im Gegenteil, das Wort stammt aus der altgriechischen Form des Formens oder bedeutet plastikos nicht. Plastische Chirurgie sowie Verbesserung der Krankheit und des Aussehens der Person, Gesichtstrauma oder Operation und befindet sich in einem Fachgebiet in der Rekonstruktion von Körpergewebedefekten aufgrund von Geburtsfehlern. Sie können uns kontaktieren, um detailliertere Informationen über unsere Dienstleistungen für plastische Chirurgie zu erhalten.";
-    urunlerimizHeader = "UNSERE PRODUKTE";
-    urunlerimizHeaderSub = "Unsere Produkte";
-
     btnFinish = "komplett";
     btnBext = "vorwärts";
     btnPrevious = "früher";
@@ -809,7 +713,7 @@ const forDeutsch = () => {
     homeTitleContact = "Senden Sie uns Ihre Informationen und wir rufen Sie an.";
     homeTitleCall = "Rufen Sie uns an!";
     homeBannerSSS = "Häufig gefragt";
-    homeBannerBlog = "In Bezug auf Haartransplantation";
+    homeBannerBlog = "Über Ästhetik";
     homeBannerContact = "Kommunikation";
     homeFooterFirstText = "Es steht Ihnen mit seinem professionellen Personal zur Verfügung, das seit langem im Bereich der Haartransplantation tätig ist.";
     homeFooterHaveAQuestion = "Haben Sie eine Frage?";
@@ -817,7 +721,7 @@ const forDeutsch = () => {
     homeFooterLinks = "Einladungen";
     homeFooterHomepage = "Zuhause";
     homeFooterSSS = "Häufig gefragt";
-    homeFooterBlog = "In Bezug auf Haartransplantation";
+    homeFooterBlog = "Über Ästhetik";
     homeFooterContact = "Kommunikation";
     homeFooterServices = "Dienstleistungen";
     homeFooterCookiePolicy = "Cookie-Richtlinie";
@@ -880,13 +784,13 @@ const forDeutsch = () => {
     hairHeader2 = "Lassen Sie uns nach der Analyse auf Sie zurückkommen";
     analizAd = "Ihr Vor- und Nachname ..";
     analizTel = "Ihre Telefonnummer ..";
-    indexMethodsHeader1 = "FUE-Methode";
+    indexMethodsHeader1 = "Unrasierte FUE-Technik";
     indexMethodsText1 = " Mit dieser Methode, die dieselben Schritte wie mit der Standard-FUE-Technik ausführt, können Sie Ihre Haartransplantation problemlos durchführen, ohne sich rasieren zu müssen.";
     indexMethodsHeader2 = " DHI-Methode";
     indexMethodsText2 = " Mit der DHI-Haartransplantationsmethode können die nacheinander gesammelten Haarfollikel häufiger mit automatischen Choi-Implantatstiften transplantiert werden.";
-    indexMethodsHeader3 = "Saphir FUE";
+    indexMethodsHeader3 = "Magic Saphire System";
     indexMethodsText3 = " Wird später geschrieben";
-    indexMethodsHeader4 = " Unrasierte FUE";
+    indexMethodsHeader4 = " Hyperbare Haartransplantation";
     indexMethodsText4 = " Die hyperbare Haartransplantation ist eine Behandlungsmethode, die den Heilungsprozess beschleunigt und die Haarfollikel nach der Transplantation stärkt.";
     contactLimitErr = "Bitte warten Sie ein wenig, während die Kontaktanfrage an umkippen.";
     contactSuccess = "Kontakt Ihre Anfrage wurde erfolgreich";
@@ -915,11 +819,10 @@ const forDeutsch = () => {
     analizSuccess = "Analyse erfolgreich!";
     completeText = "Ihre Informationen wurden von uns erhalten haben. Wir werden Sie mit den Informationen, die Sie so bald wie möglich zurück zu übertragen.";
     closeBtn = "SCHLIESSEN";
-    footerMethods1 = "HAARTRANSPLANTATION";
-    footerMethods2 = "BARTTRANSPLANTATION";
-    footerMethods3 = "AUGENBRAUENTRANSPLANTATION";
-    footerMethods4 = "ZAHNBEHANDLUNG";
-    footerMethods5 = "PLASTISCHE CHIRURGIE";
+    footerMethods1 = "Unrasiert Haarverpflanzung";
+    footerMethods2 = "FRAUEN Haarverpflanzung";
+    footerMethods3 = "KAS TRANSPLANTATIONS";
+    footerMethods4 = "Bart-Transplantation";
     blogEntryHeader = "HAIR ON vom Oktober";
     blogEntryHaderHome = "HOME";
     blogEntryHaderText = "HAIR ON vom Oktober";
@@ -927,21 +830,6 @@ const forDeutsch = () => {
 
 };
 const forItaliano = () => {
-    homeBannerHizmetler = "Servizi";
-    homeBannerUrunlerimiz = "I nostri prodotti";
-    sloganText = "Iniziato con un nuovo capello";
-    sloganSubText = "ALBERO MASSIMO / CONCLUSIONE AL 100% / IGIENICO";
-    pageHizmetlerText = "SERVIZI";
-    pageHizmetlerText2 = "I nostri servizi clinici";
-    pageHizmetlerText3 = "Puoi conoscere le schede sottostanti che forniamo servizi, sei curioso di poterci porre domande tramite i nostri canali di comunicazione.";
-    hizmetlerText1 = "Il modo di equipaggiare coloro che hanno subito la caduta dei capelli come i nuovi capelli più naturali e permanenti è il trapianto di capelli. Il trapianto di capelli nella zona di fuoriuscita viene aggiunto ai capelli sani del paziente. come area di costruzione in cui i capelli devono aggiungere una regione che non presenta perdita di capelli. le persone possiedono i capelli con i capelli come nessuna pratica non scritta sta guadagnando una base permanente. Il trapianto di capelli nelle nostre persone con i capelli finiti sembra naturalmente arredato in modo confortevole con la moderna pratica medica è da ripetere. Offriamo il servizio con molti metodi di trapianto di capelli.";
-    hizmetlerText2 = "Le aree della barba facciale in cui l'uscita dal corpo o il caso di follicoli piliferi a bassa densità di impianto sono presi da altre parti del nome della semina della barba in funzione. aumenti significativi sono stati osservati nella frequenza di applicazione dell'ultimo decennio di trapianto di barba. Con l'aumentare della frequenza di amministrazione sono iniziate molte più attività di ricerca e sviluppo riguardanti la barba di ottobre. Puoi inviarci le tue domande sul nostro servizio Beard October.";
-    hizmetlerText3 = "Sopracciglia del viso umano, naso, una delle parti più caratteristiche come labbra e zigomi. L'armonia tra queste sezioni può consentire alle persone di raggiungere una visione perfetta di ciò che chiamiamo il rapporto aureo. L'operazione del sopracciglio, la perdita e le caratteristiche genetiche a seconda della regione rimanente di Kass è che viene trasferito dai follicoli piliferi dell'operazione del donatore. Perdita di sopracciglia, sopracciglia di solito hanno fatto acquisti dalla stessa area per lungo tempo, rompendo i capelli (alopecia areata) e così via. trattenendo i peli radicali di varie malattie della pelle, l'applicazione di un trucco permanente può verificarsi per motivi come la chemioterapia. Puoi inviarci le tue domande sul nostro servizio Trapianto di sopracciglia.";
-    hizmetlerText4 = "il nostro organo più importante della digestione degli alimenti che mangiamo uno dei nostri denti. Naturalmente, ne parliamo anche esteticamente belli e il suo viso è molto importante in termini di bellezza. i nostri denti e la vita di ogni cosa nella nostra vita, c'è una vita. Ma se guardiamo i nostri denti, i nostri denti sono richiesti molto facilmente e possono perdere in breve tempo. Potete contattarci per informazioni più dettagliate sui nostri servizi di trattamento dentale.";
-    hizmetlerText5 = "Chirurgia plastica (chirurgia plastica e ricostruttiva), per ricostruire la vista di una parte del corpo o di una caratteristica, o qualsiasi mezzo per cambiare l'operazione eseguita. poiché si tratta di un senso artificiale della parola plastica nella chirurgia plastica C'è un malinteso diffuso. Al contrario, la parola deriva dall'antica forma greca di modanatura o non significa plastikos. La chirurgia plastica, nonché il miglioramento della malattia e l'aspetto della persona, il trauma facciale o la chirurgia e si trovano in un'area di competenza nella ricostruzione dei difetti del tessuto corporeo a causa di difetti alla nascita. Puoi contattarci per informazioni più dettagliate sui nostri servizi di chirurgia plastica.";
-    urunlerimizHeader = "I NOSTRI PRODOTTI";
-    urunlerimizHeaderSub = "I nostri prodotti";
-
     btnFinish = "completo";
     btnBext = "in avanti";
     btnPrevious = "precedente";
@@ -951,7 +839,7 @@ const forItaliano = () => {
     homeTitleContact = "Invia le tue informazioni e ti chiameremo.";
     homeTitleCall = "Chiamaci!";
     homeBannerSSS = "Chiesto frequentemente";
-    homeBannerBlog = "Per quanto riguarda il trapianto di capelli";
+    homeBannerBlog = "A proposito di estetica";
     homeBannerContact = "comunicazione";
     homeFooterFirstText = "È al tuo servizio con il suo staff professionale che opera nel campo del trapianto di capelli da molto tempo.";
     homeFooterHaveAQuestion = "Hai una domanda?";
@@ -959,7 +847,7 @@ const forItaliano = () => {
     homeFooterLinks = "rinvii";
     homeFooterHomepage = "casa";
     homeFooterSSS = "Chiesto frequentemente";
-    homeFooterBlog = "Per quanto riguarda il trapianto di capelli";
+    homeFooterBlog = "A proposito di estetica";
     homeFooterContact = "comunicazione";
     homeFooterServices = "servizi";
     homeFooterCookiePolicy = "Politica sui cookie";
@@ -1022,13 +910,13 @@ const forItaliano = () => {
     hairHeader2 = "Torniamo a te dopo l'analisi";
     analizAd = "Il tuo nome e cognome ..";
     analizTel = "Il tuo numero di telefono ..";
-    indexMethodsHeader1 = "Metodo FUE";
+    indexMethodsHeader1 = "Tecnica FUE non rasata";
     indexMethodsText1 = " Puoi facilmente eseguire il processo di trapianto di capelli senza la necessità di raderti con questo metodo, che segue gli stessi passaggi con la tecnica FUE standard.";
     indexMethodsHeader2 = " Metodo DHI";
     indexMethodsText2 = " Il metodo DHI Hair Transplantation consente ai follicoli piliferi raccolti individualmente di essere trapiantati più frequentemente con le penne implanter automatiche Choi.";
-    indexMethodsHeader3 = "Sapphire FUE";
+    indexMethodsHeader3 = "Magic Saphire System";
     indexMethodsText3 = " Sarà scritto più tardi";
-    indexMethodsHeader4 = " FUE non rasato";
+    indexMethodsHeader4 = " Trapianto di capelli iperbarici";
     indexMethodsText4 = " Il trapianto di capelli iperbarici è un metodo di trattamento che accelera il processo di guarigione e rafforza i follicoli piliferi dopo il trapianto.";
     contactLimitErr = "Si prega di attendere un po 'per passare fuori la vostra richiesta di contatto.";
     contactSuccess = "Contatto La tua richiesta è stata con successo";
@@ -1057,11 +945,10 @@ const forItaliano = () => {
     analizSuccess = "Analisi! Successo";
     completeText = "I tuoi dati è stato ricevuto da noi. Vi forniremo le informazioni che trasmettete tornare il più presto possibile.";
     closeBtn = "CHIUDI";
-    footerMethods1 = "TRAPIANTO DI CAPELLI";
-    footerMethods2 = "TRANSPLANTE DE BARBA";
-    footerMethods3 = "TRAPIANTO DI SOPRACCIGLIA";
-    footerMethods4 = "TRATTAMENTO DENTALE";
-    footerMethods5 = "CHIRURGIA PLASTICA";
+    footerMethods1 = "TRAPIANTO CAPELLI Unshaven";
+    footerMethods2 = "TRAPIANTO DI CAPELLI DELLE DONNE";
+    footerMethods3 = "KAS TRAPIANTO";
+    footerMethods4 = "Barba e baffi Trapianti";
     blogEntryHeader = "CAPELLI IN OTTOBRE";
     blogEntryHaderHome = "PRINCIPALE";
     blogEntryHaderText = "CAPELLI IN OTTOBRE";
@@ -1069,19 +956,6 @@ const forItaliano = () => {
 
 };
 const forArabic = () => {
-    homeBannerHizmetler = "خدمات";
-    homeBannerUrunlerimiz = "منتجاتنا";
-    sloganText = "بدأت بشعر جديد";
-    sloganSubText = "الحد الأقصى للحرف / خاتمة 100٪ / صحية";
-    pageHizmetlerText = "خدمات";
-    pageHizmetlerText2 = "خدماتنا السريرية";
-    pageHizmetlerText3 = "يمكنك التعرف على علامات التبويب أدناه التي نقدمها للخدمات ، وأنت متشوق إلى طرح أسئلة إلينا عبر قنوات الاتصال الخاصة بنا.";
-    hizmetlerText1 = "طريقة تجهيز أولئك الذين عانوا من تساقط الشعر كأكثر الشعر الطبيعي والدائم هو زراعة الشعر. يضاف زرع الشعر في منطقة الانسكاب إلى شعر المريض الصحي. كمنطقة بناء حيث يضيف الشعر منطقة لا تعاني من تساقط الشعر. الناس يمتلكون شعرًا بشعر مثل أي ممارسة غير مكتوبة تكتسب أساسًا دائمًا. إن زراعة الشعر لدى الأشخاص ذوي الشعر الهدف تبدو طبيعية ومفروشة بشكل مريح مع الممارسة الطبية الحديثة هي تكرار. نحن نقدم لك الكثير من طرق زراعة الشعر.";
-    hizmetlerText2 = "مناطق اللحية الوجه حيث يتم إخراج الخروج من الجسم أو حالة بصيلات الشعر منخفضة الكثافة من أجزاء أخرى من اسم بذر اللحية قيد التشغيل. وقد لوحظت زيادات كبيرة في وتيرة تطبيق عملية زرع اللحية العقد الماضي. مع التواتر المتزايد للإدارة بدأ الكثير من أنشطة البحث والتطوير فيما يتعلق باللحية أكتوبر. يمكنك أن ترسل لنا أسئلتك حول خدمة زرع اللحية.";
-    hizmetlerText3 = "حواجب العين والأنف ، وهي من أكثر الأجزاء المميزة مثل الشفاه وعظام الوجنتين. يمكن تمكين الانسجام بين هذه الأقسام الناس من الوصول إلى رؤية مثالية لما نسميه النسبة الذهبية. عملية الحواجب وفقدانها وخصائصها الوراثية اعتمادًا على منطقة كاس المتبقية ، يتم نقلها من بصيلات الشعر في العملية المانحة. فقدان الحاجبين ، عادةً ما قام الحاجبين بعمليات شراء من نفس المنطقة لفترة طويلة ، وكسر الشعر (داء الثعلبة) وما إلى ذلك. يمسك الشعر الجذري لأمراض جلدية مختلفة ، يمكن أن يحدث تطبيق الماكياج الدائم لأسباب مثل العلاج الكيميائي. يمكنك أن ترسل لنا أسئلتك حول خدمتنا الحاجب زرع.";
-    hizmetlerText4 = "أهم عضو لدينا في هضم الأطعمة التي نتناولها من أسناننا. وبالطبع نتحدث أيضًا عن أن تكون جميلة من الناحية الجمالية للخروج منه ووجهه مهم جدًا من حيث جمالنا. أسناننا وكذلك حياة كل شيء في حياتنا ، هناك حياة. ولكن إذا نظرنا إلى أسناننا ، فإن أسناننا كما هو مطلوب بسهولة كبيرة ويمكن أن تخسر في وقت قصير. يمكنك الاتصال بنا للحصول على معلومات أكثر تفصيلاً حول خدمات علاج الأسنان لدينا.";
-    hizmetlerText5 = "الجراحة التجميلية (الجراحة التجميلية والترميمية) ، لإعادة بناء وجهة نظر جزء أو خصائص الجسم ، أو أي وسيلة لتغيير العملية التي يتم إجراؤها. فيما يتعلق بالمعنى الاصطناعي لكلمة البلاستيك في الجراحة التجميلية هناك سوء فهم واسع النطاق. على العكس ، تأتي الكلمة من الشكل اليوناني القديم للقولبة أو الكلمة التي تعني plastikos لا. الجراحة التجميلية ، بالإضافة إلى تحسن المرض وظهور الشخص أو إصابة الوجه أو الجراحة وتقع في منطقة من الخبرة في إعادة بناء عيوب أنسجة الجسم بسبب العيوب الخلقية. يمكنك الاتصال بنا للحصول على معلومات أكثر تفصيلاً حول خدمات جراحة التجميل لدينا.";
-
     btnFinish = "كامل";
     btnBext = "إلى الأمام";
     btnPrevious = "سابق";
@@ -1091,7 +965,7 @@ const forArabic = () => {
     homeTitleContact = "أرسل معلوماتك وسنتصل بك";
     homeTitleCall = "اتصل بنا";
     homeBannerSSS = "متكرر";
-    homeBannerBlog = "فيما يتعلق بزراعة الشعر";
+    homeBannerBlog = "عن الجماليات";
     homeBannerContact = "اتصالات";
     homeFooterFirstText = "في خدمتك مع موظفيها المحترفين الذين يعملون في مجال زراعة الشعر لفترة طويلة.";
     homeFooterHaveAQuestion = "لديك سؤال؟";
@@ -1099,7 +973,7 @@ const forArabic = () => {
     homeFooterLinks = "الإحالات";
     homeFooterHomepage = "الصفحة الرئيسية";
     homeFooterSSS = "كثيرا ما طلب";
-    homeFooterBlog = "فيما يتعلق بزراعة الشعر";
+    homeFooterBlog = "عن الجماليات";
     homeFooterContact = "اتصالات";
     homeFooterServices = "الخدمات";
     homeFooterCookiePolicy = "سياسة ملفات تعريف الارتباط";
@@ -1162,13 +1036,13 @@ const forArabic = () => {
     hairHeader2 = "دعنا نعود إليك بعد التحليل";
     analizAd = "اسمك ولقبك ..";
     analizTel = "رقم هاتفك ..";
-    indexMethodsHeader1 = "طريقة FUE";
+    indexMethodsHeader1 = "غير محلوق تقنية FUE";
     indexMethodsText1 = " يمكنك بسهولة إجراء عملية زراعة الشعر دون الحاجة للحلاقة باستخدام هذه الطريقة ، والتي تتبع نفس الخطوات باستخدام تقنية FUE القياسية.";
     indexMethodsHeader2 = " أسلوب DHI";
     indexMethodsText2 = " تسمح طريقة زرع الشعر في DHI ببصيلات الشعر التي يتم جمعها بشكل فردي ليتم زرعها بشكل متكرر أكثر باستخدام أقلام الزرع التلقائية لـ Choi.";
-    indexMethodsHeader3 = "الياقوت FUE";
+    indexMethodsHeader3 = "نظام سافير السحري";
     indexMethodsText3 = " سوف تكتب لاحقا";
-    indexMethodsHeader4 = "FUE غير محلوق";
+    indexMethodsHeader4 = " زراعة الشعر عالي الضغط";
     indexMethodsText4 = " زراعة الشعر بضغط عالي هي طريقة علاج تسرع عملية الشفاء وتقوي بصيلات الشعر بعد الزرع.";
     contactLimitErr = "الرجاء الانتظار قليلا بينما لتمرير طلب الاتصال الخاصة بك.";
     contactSuccess = "الاتصال كان طلبك بنجاح";
@@ -1197,11 +1071,10 @@ const forArabic = () => {
     analizSuccess = "تحليل! الناجح";
     completeText = "وقد وردت معلومات من قبلنا. وسوف نقدم لكم مع المعلومات التي ترسلها العودة في أقرب وقت ممكن.";
     closeBtn = "أغلق";
-    footerMethods1 = "زراعة الشعر";
-    footerMethods2 = "زرع لورد";
-    footerMethods3 = "زرع الحاجب";
-    footerMethods4 = "علاج الأسنان";
-    footerMethods5 = "جراحة تجميلية";
+    footerMethods1 = "غير حليق زراعة الشعر";
+    footerMethods2 = "مزرعة النساء";
+    footerMethods3 = "زرع الحواجب";
+    footerMethods4 = "لحية وشارب زراعة";
     blogEntryHeader = "الشعر على أكتوبر";
     blogEntryHaderHome = "الصفحة الرئيسية";
     blogEntryHaderText = "الشعر على أكتوبر";
@@ -1209,21 +1082,6 @@ const forArabic = () => {
 
 }
 const forPortogues = () => {
-    homeBannerHizmetler = "Serviços";
-    homeBannerUrunlerimiz = "Nossos produtos";
-    sloganText = "Começou com um novo cabelo";
-    sloganSubText = "ENXERTO MÁXIMO / 100% CONCLUSÃO / HIGIÊNICO";
-    pageHizmetlerText = "SERVIÇOS";
-    pageHizmetlerText2 = "Nossos Serviços Clínicos";
-    pageHizmetlerText3 = "Você pode aprender sobre as guias abaixo que fornecemos serviços, você está curioso para poder fazer perguntas através de nossos canais de comunicação.";
-    hizmetlerText1 = "A maneira de equipar aqueles que sofreram queda de cabelo como o novo cabelo mais natural e permanente é o transplante de cabelo. O transplante de cabelo na zona de derramamento é adicionado ao cabelo saudável do próprio paciente. como área de construção onde o cabelo deve adicionar uma região sem perda de cabelo. as pessoas possuem cabelos com cabelos, como nenhuma prática não escrita está ganhando uma base permanente. O transplante de cabelo em nosso povo de cabelos com objetivos naturalmente parece confortável com a prática médica moderna é repetir. Nós fornecemos o serviço com muitos métodos de transplante de cabelo para você.";
-    hizmetlerText2 = "Áreas de barba facial em que a saída do corpo ou o caso de folículos capilares de baixa densidade vegetal são retirados de outras partes do nome da semeadura em operação. aumentos significativos foram observados na frequência de aplicação da última década na operação de transplante de barba. Com o aumento da frequência da administração começou muito mais atividades de pesquisa e desenvolvimento em relação à barba em outubro. Você pode nos enviar suas perguntas sobre o nosso serviço de transplante de barba.";
-    hizmetlerText3 = "Rosto humano sobrancelhas, nariz, uma das partes mais características, como lábios e maçãs do rosto. A harmonia entre essas seções pode permitir que as pessoas alcancem uma visão perfeita do que chamamos de proporção áurea. A operação da sobrancelha, perda e características genéticas, dependendo da região restante de Kass, é que ela é transferida dos folículos capilares da operação do doador. Perda de sobrancelhas, as sobrancelhas geralmente fazem compras na mesma área por um longo tempo, quebram os cabelos (alopecia areata) e assim por diante. segurando os pêlos radiculares de várias doenças de pele, a aplicação de maquiagem permanente pode ocorrer por razões como quimioterapia. Você pode nos enviar suas perguntas sobre o nosso serviço Transplante de Sobrancelha.";
-    hizmetlerText4 = "nosso órgão mais importante da digestão dos alimentos que ingerimos um de nossos dentes. É claro que também falamos ser esteticamente bonito e seu rosto é muito importante em termos de beleza. nossos dentes, bem como a vida de tudo em nossas vidas, há uma vida. Mas se olharmos para os dentes, eles serão necessários com muita facilidade e podem perder em pouco tempo. Você pode entrar em contato conosco para obter informações mais detalhadas sobre nossos serviços de tratamento odontológico.";
-    hizmetlerText5 = "Cirurgia plástica (cirurgia plástica e reconstrutiva), para reconstruir a visão de uma parte ou característica do corpo, ou qualquer meio de alterar a operação realizada. no que diz respeito a um sentido artificial da palavra plástico na cirurgia plástica Há um mal-entendido generalizado. Pelo contrário, a palavra vem da forma grega antiga de moldagem ou palavra que significa plastikos. A cirurgia plástica, além de melhorar a doença e a aparência da pessoa, trauma facial ou cirurgia, está localizada em uma área de especialização na reconstrução de defeitos nos tecidos corporais devido a defeitos congênitos. Você pode entrar em contato conosco para obter informações mais detalhadas sobre nossos serviços de cirurgia plástica.";
-    urunlerimizHeader = "NOSSOS PRODUTOS";
-    urunlerimizHeaderSub = "Nossos produtos";
-
     btnFinish = "completo";
     btnBext = "para a frente";
     btnPrevious = "anterior";
@@ -1233,7 +1091,7 @@ const forPortogues = () => {
     homeTitleContact = "Envie suas informações e nós ligaremos para você.";
     homeTitleCall = "Ligue-nos!";
     homeBannerSSS = "Perguntas frequentes";
-    homeBannerBlog = "Em relação ao transplante capilar";
+    homeBannerBlog = "Sobre estética";
     homeBannerContact = "comunicação";
     homeFooterFirstText = "Está ao seu serviço com sua equipe profissional que atua na área de transplante capilar há muito tempo.";
     homeFooterHaveAQuestion = "Tem uma pergunta?";
@@ -1241,7 +1099,7 @@ const forPortogues = () => {
     homeFooterLinks = "referências";
     homeFooterHomepage = "casa";
     homeFooterSSS = "Perguntas frequentes";
-    homeFooterBlog = "Em relação ao transplante capilar";
+    homeFooterBlog = "Sobre estética";
     homeFooterContact = "comunicação";
     homeFooterServices = "serviços";
     homeFooterCookiePolicy = "Política de cookies";
@@ -1304,13 +1162,13 @@ const forPortogues = () => {
     hairHeader2 = "Vamos voltar para você após a análise";
     analizAd = "Seu nome e sobrenome ..";
     analizTel = "O seu número de telefone ..";
-    indexMethodsHeader1 = "Método FUE";
+    indexMethodsHeader1 = "Técnica FUE não barbeada";
     indexMethodsText1 = " Você pode facilmente fazer seu processo de transplante de cabelo sem a necessidade de se barbear com esse método, que segue as mesmas etapas da técnica FUE padrão.";
     indexMethodsHeader2 = " Método DHI";
     indexMethodsText2 = " O método de transplante capilar DHI permite que os folículos capilares coletados individualmente sejam transplantados com mais frequência com canetas implantadoras Choi automáticas.";
-    indexMethodsHeader3 = "Safira FUE";
+    indexMethodsHeader3 = "Magic Saphire System";
     indexMethodsText3 = " Será escrito mais tarde";
-    indexMethodsHeader4 = " FUE não barbeado";
+    indexMethodsHeader4 = " Transplante de cabelo hiperbárico";
     indexMethodsText4 = " O transplante de cabelo hiperbárico é um método de tratamento que acelera o processo de cicatrização e fortalece os folículos capilares após o transplante.";
     contactLimitErr = "Por favor, aguarde um pouco para passar para fora o seu pedido de contato.";
     contactSuccess = "Contato Seu pedido foi bem sucedida";
@@ -1339,32 +1197,52 @@ const forPortogues = () => {
     analizSuccess = "Análise Successful!";
     completeText = "Suas informações foram recebidas por nós. Nós iremos fornecer-lhe as informações que você transmitir voltar o mais rapidamente possível.";
     closeBtn = "FECHAR";
-    footerMethods1 = "TRANSPLANTE DE CABELO";
-    footerMethods2 = "TRANSPLANTE DE BARBA";
-    footerMethods3 = "TRANSPLANTE DE OLHOS";
-    footerMethods4 = "TRATAMENTO DENTÁRIO";
-    footerMethods5 = "CIRURGIA PLÁSTICA";
+    footerMethods1 = "Barba por fazer transplante de cabelo";
+    footerMethods2 = "Transplante de cabelo feminino";
+    footerMethods3 = "Transplante de Sobrancelha";
+    footerMethods4 = "Barba e bigode Transplantation";
     blogEntryHeader = "CABELO EM OUTUBRO";
     blogEntryHaderHome = "PÁGINA PRINCIPAL";
     blogEntryHaderText = "CABELO EM OUTUBRO";
     blogEntryHaderText2 = "ESCRITO";
+    contactLimitErr = "Пожалуйста, подождите некоторое время, чтобы передать ваш запрос контакта.";
+    contactSuccess = "Контакт Ваш запрос был успешно";
+    contactDbError = "была обнаружена неизвестная ошибка. Пожалуйста, попробуйте связаться с другими каналами связи.";
+    oneMinuteAnalizOpened = "Анализ в течение 1 минуты";
+    oneMinuteAnalizClosed = "Анализ в течение 1 минуты";
+    step1Text = "Норвуд Гамильтон и Людвиг основаны на весах Savi";
+    headerAnaliz1H4 = "Выберите тип выпадения волос";
+    notSureBtn = "Не уверен, что>";
+    prevBtn = "<Предыдущая";
+    yasH4 = "Сколько вам лет?";
+    ilacH4 = "Использовали ли вы наркотики регулярно?";
+    ilacHayirBtn = "НЕТ";
+    ilacEvetBtn = "ДА";
+    ilacEvet = "Пожалуйста, укажите";
+    ilacInputEvet = " провинция";
+    hastalikH4 = "Есть ли у вас какие-либо заболевания?";
+    btnHIV = "ВИЧ";
+    btnHepatit = "гепатит С";
+    btnKalp = "Хроническая сердечная Disorder";
+    btnHastalikYok = "НЕТ";
+    analizH3 = "Заполните форму для анализа.";
+    analizInputNameSurname = "Имя Фамилия";
+    analizInputMail = "E-mail";
+    completeBtn = "ОТНОСИТЬСЯ";
+    analizSuccess = "Анализ Успешный!";
+    completeText = "Ваша информация была получена нами. Мы предоставим Вам информацию, которую вы передаете вернуться как можно скорее.";
+    closeBtn = "ЗАКРЫТЬ";
+    footerMethods1 = "Небритый ВОЛОС трансплантат";
+    footerMethods2 = "Женская пересадка волос";
+    footerMethods3 = "Трансплантация бровей";
+    footerMethods4 = "Борода и Усы Трансплантация";
+    blogEntryHeader = "Волос на октябрь";
+    blogEntryHaderHome = "HOME";
+    blogEntryHaderText = "Волос на октябрь";
+    blogEntryHaderText2 = "ЗАПИСЬ";
+
 }
 const forRussian = () => {
-    homeBannerHizmetler = "Сервисы";
-    homeBannerUrunlerimiz = "Наши продукты";
-    sloganText = "Началось с новых волос";
-    sloganSubText = "МАКСИМАЛЬНЫЙ РЕМОНТ / 100% ВЫВОД / ГИГИЕНИЧЕСКИЙ";
-    pageHizmetlerText = "СЕРВИСЫ";
-    pageHizmetlerText2 = "Наши Клинические Услуги";
-    pageHizmetlerText3 = "Вы можете узнать о вкладках ниже мы предоставляем услуги, вам интересно, вы можете задать нам вопросы через наши каналы связи.";
-    hizmetlerText1 = "Для тех, кто потерял волосы как наиболее естественные и перманентные новые волосы, можно использовать пересадку волос. Трансплантация волос в зоне разлива, добавляется к собственным здоровым волосам пациента. в качестве строительной области, где волосы должны добавить область, не испытывающую выпадения волос. У людей волосы на волосах, как будто неписаная практика приобретает постоянную основу. Трансплантация волос у наших целеустремленных людей естественно выглядит комфортно, обставленная современной медицинской практикой, это повторить. Мы предоставляем услугу множеством методов трансплантации волос.";
-    hizmetlerText2 = "Лицевые области бороды, где выход из тела или в случае посадки волосяных фолликулов низкой плотности взяты из других частей имени сеяния бороды в действии. Значительное увеличение наблюдалось в частоте применения операции трансплантации бороды в последнее десятилетие. С ростом частоты администрации началось гораздо больше исследований и разработок в отношении бороды Октябрь. Вы можете отправить нам свои вопросы о нашей службе трансплантации бороды.";
-    hizmetlerText3 = "Человеческое лицо, брови, нос, одна из самых характерных частей, таких как губы и скулы. Гармония между этими разделами может помочь людям достичь идеального представления о том, что мы называем золотым сечением. Операция бровей, потеря и генетические особенности в зависимости от оставшейся области Касса заключается в том, что она передается от волосяных фолликулов донорской операции. Выпадение бровей, брови, как правило, совершаются покупки в одном и том же месте в течение длительного времени, ломка волос (очаговая алопеция) и так далее. удерживая корневые волоски при различных кожных заболеваниях, нанесение перманентного макияжа может происходить по таким причинам, как химиотерапия. Вы можете отправить нам свои вопросы о нашем сервисе трансплантации бровей.";
-    hizmetlerText4 = "наш самый важный орган переваривания пищи, которую мы едим одним из наших зубов. Конечно, мы говорим также быть эстетически красивым, и его лицо очень важно с точки зрения нашей красоты. наши зубы, а также жизнь всего в нашей жизни, есть жизнь. Но если мы посмотрим на наши зубы, наши зубы по мере необходимости очень легко и могут потерять за короткое время. Вы можете связаться с нами для получения более подробной информации о наших стоматологических услугах.";
-    hizmetlerText5 = "Пластическая хирургия (пластическая и реконструктивная хирургия), чтобы восстановить вид части тела или характеристики, или любые средства, чтобы изменить выполненную операцию. Что касается искусственного смысла слова пластика в пластической хирургии, то здесь широко распространено недоразумение. Напротив, слово происходит от древнегреческой формы молдинга или не означает слово пластикос. Пластическая хирургия, а также улучшение состояния и внешнего вида человека, травмы лица или операции и находится в области экспертизы в реконструкции дефектов тканей тела из-за врожденных дефектов. Вы можете связаться с нами для получения более подробной информации о наших услугах пластической хирургии.";
-    urunlerimizHeader = "НАШИ ПРОДУКТЫ";
-    urunlerimizHeaderSub = "Наши продукты";
-
     btnFinish = "полный";
     btnBext = "вперед";
     btnPrevious = "предыдущий";
@@ -1374,7 +1252,7 @@ const forRussian = () => {
     homeTitleContact = "Отправьте свою информацию и мы вам перезвоним.";
     homeTitleCall = "Позвоните нам";
     homeBannerSSS = "Часто задаваемые вопросы";
-    homeBannerBlog = "Что касается трансплантации волос";
+    homeBannerBlog = "Об эстетике";
     homeBannerContact = "связь";
     homeFooterFirstText = "Он к вашим услугам со своим профессиональным персоналом, который уже давно работает в области трансплантации волос.";
     homeFooterHaveAQuestion = "Есть вопрос?";
@@ -1382,7 +1260,7 @@ const forRussian = () => {
     homeFooterLinks = "рефералов";
     homeFooterHomepage = "дома";
     homeFooterSSS = "Часто задаваемые вопросы";
-    homeFooterBlog = "Что касается трансплантации волос";
+    homeFooterBlog = "Об эстетике";
     homeFooterContact = "связь";
     homeFooterServices = "услуги";
     homeFooterCookiePolicy = "Политика в отношении файлов cookie";
@@ -1445,87 +1323,19 @@ const forRussian = () => {
     hairHeader2 = "Вернемся к вам после анализа";
     analizAd = "Ваше имя и фамилия ..";
     analizTel = "Ваш номер телефона ..";
-    indexMethodsHeader1 = "Метод FUE";
+    indexMethodsHeader1 = "Техника небритого FUE";
     indexMethodsText1 = " Вы можете легко провести процесс трансплантации волос без необходимости бритья с помощью этого метода, который следует тем же шагам со стандартной техникой FUE.";
     indexMethodsHeader2 = " Метод DHI";
     indexMethodsText2 = " Метод трансплантации волос DHI позволяет чаще собирать волосяные фолликулы с помощью автоматических ручек для имплантации Choi.";
-    indexMethodsHeader3 = "Сапфир FUE";
+    indexMethodsHeader3 = "Волшебная система сапфиров";
     indexMethodsText3 = " Будет написано позже";
-    indexMethodsHeader4 = " Небритый FUE";
+    indexMethodsHeader4 = " Гипербарическая пересадка волос";
     indexMethodsText4 = " Гипербарическая трансплантация волос - это метод лечения, который ускоряет процесс заживления и укрепляет волосяные фолликулы после трансплантации.";
-    contactLimitErr = "Пожалуйста, подождите немного, чтобы раздать ваш контактный запрос.";
-    contactSuccess = "Контакт Ваш заказ был успешным";
-    contactDbError = "Обнаружена неизвестная ошибка. Пожалуйста, попробуйте связаться с другими каналами связи.;";
-    oneMinuteAnalizOpened = "Анализ за 1 минуту;";
-    oneMinuteAnalizClosed = "Анализ за 1 минуту;";
-    step1Text = "Норвуд Гамильтон и Людвиг основаны на шкалах Сави;";
-    headerAnaliz1H4 = "Выберите свой тип выпадения волос;";
-    notSureBtn = "Я не уверен>;";
-    prevBtn = "<Предыдущий;";
-    yasH4 = "Сколько тебе лет?;";
-    ilacH4 = "Вы регулярно употребляли наркотики?";
-    ilacHayirBtn = "На;";
-    ilacEvetBtn = "ДА;";
-    ilacEvet = "Пожалуйста уточни;";
-    ilacInputEvet = "провинций;";
-    hastalikH4 = "У тебя есть болезнь ?;";
-    btnHIV = "ВИЧ;";
-    btnHepatit = "гепатит С;";
-    btnKalp = "Хроническое сердечное расстройство;";
-    btnHastalikYok = "На;";
-    analizH3 = "Заполните форму для анализа.";
-    analizInputNameSurname = "имя Фамилия;";
-    analizInputMail = "Эл. адрес;";
-    completeBtn = "ПРИМЕНЯТЬ;";
-    analizSuccess = "Успешный анализ!";
-    completeText = "Ваша информация была получена нами. Мы предоставим вам информацию, которую вы отправите, как можно скорее.;";
-    closeBtn = "БЛИЗКО;";
-    footerMethods1 = "ТРАНСПЛАНТАЦИЯ ВОЛОС;";
-    footerMethods2 = "ТРАНСПЛАНТАЦИЯ Бороды;";
-    footerMethods3 = "ТРАНСПЛАНТАЦИЯ ГЛАЗ;";
-    footerMethods4 = "СТОМАТОЛОГИЧЕСКОЕ ЛЕЧЕНИЕ;";
-    footerMethods5 = "ПЛАСТИЧЕСКАЯ ХИРУРГИЯ;";
-    blogEntryHeader = "ВОЛОСЫ В ОКТЯБРЕ;";
-    blogEntryHaderHome = "ГЛАВНАЯ СТРАНИЦА;";
-    blogEntryHaderText = "ВОЛОСЫ В ОКТЯБРЕ;";
-    blogEntryHaderText2 = "НАПИСАНО;";
 
 
 };
 //Apply
 const forApply = () => {
-    $("#homeBannerHizmetler").text(homeBannerHizmetler);
-    $("#homeBannerUrunlerimiz").text(homeBannerUrunlerimiz);
-    $("#sloganText").text(sloganText);
-    $("#sloganSubText").text(sloganSubText);
-
-    $("#urunlerimizHeader").text(urunlerimizHeader);
-    $("#urunlerimizHeaderSub").text(urunlerimizHeaderSub);
-
-    $("#pageHizmetlerText").text(pageHizmetlerText);
-    $("#pageHizmetlerText2").text(pageHizmetlerText2);
-    $("#pageHizmetlerText3").text(pageHizmetlerText3);
-
-
-    $("#v-pills-1-tab").text(footerMethods1);
-    $("#v-pills-2-tab").text(footerMethods2);
-    $("#v-pills-3-tab").text(footerMethods3);
-    $("#v-pills-4-tab").text(footerMethods4);
-    $("#v-pills-5-tab").text(footerMethods5);
-
-    $("#footerSame1").text(footerMethods1);
-    $("#footerSame2").text(footerMethods2);
-    $("#footerSame3").text(footerMethods3);
-    $("#footerSame4").text(footerMethods4);
-    $("#footerSame5").text(footerMethods5);
-
-    $("#hizmetlerText1").text(hizmetlerText1);
-    $("#hizmetlerText2").text(hizmetlerText2);
-    $("#hizmetlerText3").text(hizmetlerText3);
-    $("#hizmetlerText4").text(hizmetlerText4);
-    $("#hizmetlerText5").text(hizmetlerText5);
-
-
     $("#btnEvet").text(btnEvet);
     $("#btnHayir").text(btnHayir);
     $("#homeTitleWp").text(homeTitleWp);
@@ -1539,7 +1349,6 @@ const forApply = () => {
     $("#homeFooterWpText").text(homeFooterWpText);
     $("#homeFooterLinks").text(homeFooterLinks);
     $("#homeFooterHomepage").text(homeFooterHomepage);
-    $("#urunlerimizHaderHome").text(homeFooterHomepage);
     $("#homeFooterSSS").text(homeFooterSSS);
     $("#homeFooterBlog").text(homeFooterBlog);
     $("#homeFooterContact").text(homeFooterContact);
@@ -1642,7 +1451,6 @@ const forApply = () => {
     $("#footerMethods2").text(footerMethods2);
     $("#footerMethods3").text(footerMethods3);
     $("#footerMethods4").text(footerMethods4);
-    $("#footerMethods5").text(footerMethods5);
     $("#blogEntryHeader").text(blogEntryHeader);
     $("#blogEntryHaderHome").text(blogEntryHaderHome);
     $("#blogEntryHaderText").text(blogEntryHaderText);

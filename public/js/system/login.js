@@ -6,7 +6,6 @@ socket.on('loginStatus', (data) => {
         if (data.userStatus) {
             //Login success
             Cookies.set('ucid', data.cookie);
-            alert(Cookies.get('ucid'));
             location.reload();
         }
         else {

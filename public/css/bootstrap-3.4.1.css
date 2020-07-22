@@ -10102,9 +10102,19 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   opacity: .8;
   background: #2f89fc;
 }
+.hero-wrap .overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  opacity: .8;
+  background: #4B4545;
+}
 
 .hero-wrap.hero-wrap-2 {
-  height: 300px;
+  height: 320px;
 }
 
 .hero-wrap.hero-wrap-2 .slider-text {
@@ -10226,18 +10236,11 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 }
 
 .owl-carousel.home-slider {
-  position: relative;
-  height: 600px;
-  z-index: 0;
 }
 
 .owl-carousel.home-slider .slider-item {
+  width: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 600px;
-  position: relative;
-  z-index: 0;
 }
 
 @media (max-width: 1199.98px) {
@@ -10258,6 +10261,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 .owl-carousel.home-slider .slider-item .slider-text {
   height: 600px;
+  margin-left: 10px;
 }
 
 @media (max-width: 767.98px) {
@@ -10426,6 +10430,9 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .bg-light {
   background: #fafafa !important;
 }
+.bg-blue {
+  background: #F4F4F4 !important;
+}
 
 .bg-white {
   background: #fff !important;
@@ -10549,7 +10556,8 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 @media (min-width: 768px) {
   .svkn-services {
-    margin-top: -50px;
+    margin-top: -12px;
+    margin-left: -5px;
   }
 }
 
@@ -10682,7 +10690,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   border-radius: 0;
   margin-bottom: 0;
   color: #000000;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   position: relative;
   display: inline-block;
@@ -15801,4 +15809,18 @@ lesshat-selector {
   color:white;
   background-color: #C0392B;
   margin-top:10%
+}
+.footerBg
+{
+  background-image: url(/public/images/hospitalBG.jpg);
+  -webkit-background-size: 100%; 
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+  max-width: 100%;
+
 }

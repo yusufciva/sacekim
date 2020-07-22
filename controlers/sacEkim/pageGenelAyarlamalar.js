@@ -31,12 +31,11 @@ const Insert = (data, actionName, callback) => {
     };
     let uniqueFields = { };
     let newData = new schemaGenelAyarlamalar({
-        baslikKisim1: clientData[0],
-        baslikKisim2: clientData[1],
-        telefon: clientData[2],
-        eposta: clientData[3],
+        kurumAdi:clientData[0],
+        telefon: clientData[1],
+        eposta: clientData[2],
     });
-    let returnDataFormat = ['_id', 'baslikKisim1', 'baslikKisim2', 'telefon', 'eposta'];
+    let returnDataFormat = ['_id', 'logo', 'kurumAdi', 'telefon', 'eposta'];
     delete data['data'];
     let json = {
         request: data, actionName,
@@ -55,8 +54,8 @@ const Update = (data, actionName, callback) => {
     for (let i = 0; i < clientData.length; i++) {
         clientData[i] = htmlspecialchar(clientData[i]);
     };
-    let returnDataFormat = ['_id', 'baslikKisim1', 'baslikKisim2', 'telefon', 'eposta'];
-    let updateFieldValue = ['', clientData[0], clientData[1], clientData[2], clientData[3]];
+    let returnDataFormat = ['_id', 'baslikKisim1', 'telefon', 'eposta'];
+    let updateFieldValue = ['', clientData[0], clientData[1], clientData[2]];
     let json = {
         request: data,
         actionName,

@@ -2,8 +2,7 @@ $(document).ready(() => {
     let sayfaGenelAyarlamalar = 'sacEkim_GenelAyarlamalar';
     socket.on(sayfaGenelAyarlamalar + '_Click_Result', (data) => {
         let input = [
-            { type: 'text', id: 'baslikKisim1', icon: 'entypo-flow-tree', placeholder: 'Başlık 1. Kısım..' },
-            { type: 'text', id: 'baslikKisim2', icon: 'entypo-flow-tree', placeholder: 'Başlık 2. Kısım..' },
+            { type: 'text', icon: 'entypo-newspaper', id: 'hastaAdi', placeholder: 'Klinik adı...' },
             { type: 'mask', id: 'telefon', placeholder: "Tel: 542...", icon: 'entypo-phone', format: '9999999999' },
             { type: 'mask', id: 'eposta', placeholder: 'E-posta adresi..', format: 'email', icon: 'entypo-mail' },
         ];

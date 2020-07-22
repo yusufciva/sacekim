@@ -1,6 +1,6 @@
 const htmlspecialchar = require('htmlspecialchars');
 const moment = require('moment'); moment().locale('tr');
-const queryManager = require('../queryManager.js');
+const queryManager = require('../queryManager');
 const queryString = 'fullName passportID userTitle';
 const mongoose = require('mongoose');
 const schemaKullanici = require('../../models/sacEkim/schemaKullanici');

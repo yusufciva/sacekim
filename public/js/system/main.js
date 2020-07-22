@@ -59,6 +59,7 @@ $(document).ready(() => {
 			nav: false,
 			autoplayHoverPause: false,
 			items: 1,
+			dots:false,
 			navText: ["<span class='ion-md-arrow-back'></span>", "<i class='fa fa-rotate-right'></span>"],
 			responsive: {
 				0: {
@@ -678,19 +679,21 @@ $(document).ready(() => {
 		$(".analizHeader2").show();
 	}
 	else {
-		$("#analiz").show();
-		$(".analizHeader2").hide();
+		if (cookieClose != undefined) {
+			$("#analiz").show();
+			$(".analizHeader2").hide();
+		}
 	};
 	(function () {
 		let phoneNumber = "90" + $("#phoneNumber").attr("name");
-        var options = {
-            whatsapp: ""+phoneNumber, // WhatsApp numaranızı buraya girin
-            call_to_action: "Merhaba, nasıl yardımcı olabilirim?", // Görünecek metin
-            position: "left", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
+		var options = {
+			whatsapp: "" + phoneNumber, // WhatsApp numaranızı buraya girin
+			call_to_action: "Merhaba, nasıl yardımcı olabilirim?", // Görünecek metin
+			position: "left", // Position may be 'right' or 'left'
+		};
+		var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+		var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+		s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+		var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+	})();
 });

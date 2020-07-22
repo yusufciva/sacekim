@@ -7,7 +7,6 @@ const middleware = (req, res, next) => {
     if (req.cookies['ucid'] && req.url == '/yonetim') {
         JWT.verify(req.cookies['ucid'], (dataVerify) => {
             if (dataVerify.status) { // hata yoksa
-                console.log("Hata yok");
                 userQuery.get(dataVerify.data, (dataUser) => {
                     if (dataUser) {
                         moduleSettings.findOne({}).then((dataModule) => {
@@ -40,7 +39,6 @@ const middleware = (req, res, next) => {
             }
             else {
                 //jwt doğrulanmadıysa
-                console.log(dataVerify);
                 res.clearCookie('ucid');
                 res.redirect('/');
             };

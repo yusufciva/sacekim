@@ -2,6 +2,7 @@
 <%-body%>
 <%} else {%>
 <!DOCTYPE html>
+
 <head>
     <link rel="shortcut icon" href="/public/images/iconfinder_hat_22_2875612.ico" />
     <link rel="stylesheet" href="/public/css/bootstrap.min.css">
@@ -22,12 +23,15 @@
     <link rel="stylesheet" href="/public/js/select2/select2-bootstrap.css">
     <link rel="stylesheet" href="/public/js/select2/select2.css">
     <link rel="stylesheet" href="/public/css/intlTelInput.min.css">
+    <link href="/public/css/quill.snow.css" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/style.css">
 
-    <title><%-baslik1%> <%-baslik2%>  - Saç Ekim Merkezi</title>
-    <meta name="title" content="Sa Ekim Merkezi">
-    <meta name="description" content="Saç dökülmesi, günümüzde erken yaşlarda başlayan önemli bir sorundur. Saçların incelmesi ve ön saç çizgisinin gerilemesi şeklinde başlayan saç dökülmesinde ana faktör; erkeklerde genetik, kadınlarda ise hormonal sebepler ve bazı hastalıklardır.Saç ekimi çeşitli yöntemlerle yapılmaktadır. Yöntem doktor ve hasta tarafından ortak olarak belirlenmektedir. Saç ekimi fiyatları için hemen bizi arayabilirsiniz.">
-    <meta name="keywords" content="traşsız saç ekimi, kadın saç ekimi, saç ekim yöntemleri, istanbul saç ekim merkezi, kaş ekimi, saç ekimi en çok sorulan sorular, saç ekimi öncesi ve sonrası">
+    <title><%-kurumAdi%></title>
+    <meta name="title" content="Saç Ekim Merkezi">
+    <meta name="description"
+        content="Saç dökülmesi, günümüzde erken yaşlarda başlayan önemli bir sorundur. Saçların incelmesi ve ön saç çizgisinin gerilemesi şeklinde başlayan saç dökülmesinde ana faktör; erkeklerde genetik, kadınlarda ise hormonal sebepler ve bazı hastalıklardır.Saç ekimi çeşitli yöntemlerle yapılmaktadır. Yöntem doktor ve hasta tarafından ortak olarak belirlenmektedir. Saç ekimi fiyatları için hemen bizi arayabilirsiniz.">
+    <meta name="keywords"
+        content="traşsız saç ekimi, kadın saç ekimi, saç ekim yöntemleri, istanbul saç ekim merkezi, kaş ekimi, saç ekimi en çok sorulan sorular, saç ekimi öncesi ve sonrası">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf8">
     <meta charset="UTF-8">
@@ -36,52 +40,87 @@
     <meta name="author" content="Engin KANMAZ">
 </head>
 
-<body>
-<div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+<body style="background-color:#fafafa;">
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
                 stroke="#F96D00" /></svg></div>
-    <nav class="navbar py-4 navbar-expand-lg svkn_navbar-light bg-light flex-row">
-        <div class="container">
-            <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
-                <div class="col-lg-2 pr-4 align-items-center">
-                    <a class="navbar-brand" style="color:black" href="/"><%-baslik1%> <span><%-baslik2%></span></a>
-                </div>
-                <div class="col-lg-10 d-none d-md-block">
-                    <div class="row d-flex">
-                        <div class="col-md-4 pr-4 d-flex topper align-items-center">
-                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center">
-                                <a href="https://wa.me/90<%-telefon%>">
-                                    <i style="font-size:32px; color:green" class="fa fa-whatsapp"></i>
-                                </a>
-                            </div>
-                            <span id="homeTitleWp" class="text"></span>
+
+    <div style="display:none;" class="container">
+        <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
+            <div class="col-lg-2 pr-4 align-items-center">
+                <img style="z-index: 999;" src="/public/images/homeLogo.png" />
+                <!--<a class="navbar-brand" style="color:black" href="/"><%-kurumAdi%></a>-->
+            </div>
+            <div class="col-lg-10 d-none d-md-block">
+                <div class="row d-flex">
+                    <div class="col-md-4 pr-4 d-flex topper align-items-center">
+                        <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center">
+                            <a href="https://wa.me/90<%-telefon%>">
+                                <i style="font-size:32px; color:green" class="fa fa-whatsapp"></i>
+                            </a>
                         </div>
-                        <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center">
-                                <a href="/iletisim">
-                                    <i style="font-size:32px; color:green" class="fa fa-edit"></i>
-                                </a>
-                            </div>
-                            <span id="homeTitleContact" class="text"></span>
+                        <span id="homeTitleWp" class="text"></span>
+                    </div>
+                    <div class="col-md pr-4 d-flex topper align-items-center">
+                        <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center">
+                            <a href="/iletisim">
+                                <i style="font-size:32px; color:green" class="fa fa-edit"></i>
+                            </a>
                         </div>
-                        <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center">
-                                <a id="phoneNumber" name="<%-telefon%>" href="tel://90<%-telefon%>">
-                                    <i style="font-size:32px; color:green" class="fa fa-phone-square"></i>
-                                </a>
-                            </div>
-                            <span class="text">
-                                <span id="homeTitleCall"></span>
-                                <b>
-                                    <h4><a href="tel://90<%-telefon%>">+90<%-telefon%></a> </h4>
-                                </b></span>
+                        <span id="homeTitleContact" class="text"></span>
+                    </div>
+                    <div class="col-md pr-4 d-flex topper align-items-center">
+                        <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center">
+                            <a id="phoneNumber" name="<%-telefon%>" href="tel://90<%-telefon%>">
+                                <i style="font-size:32px; color:green" class="fa fa-phone-square"></i>
+                            </a>
                         </div>
+                        <span class="text">
+                            <span id="homeTitleCall"></span>
+                            <b>
+                                <h4><a href="tel://90<%-telefon%>">+90<%-telefon%></a> </h4>
+                            </b></span>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+    <!-- <nav style="display: inline;height:25em; margin-top: -30px; z-index: -999; background-image: url(/public/images/bannerBG.png); background-size: cover;" class="navbar">
+        <div style="margin-left: 10%;">
+
+            <a class="navbar-brand" href="/">
+                <img style="margin-left: 40%;" src="/public/images/homeLogo.png" width="200" height="200"
+                    class="d-inline-block align-top" alt="">
+
+            </a>
+            <p style="font-size:32px; font-family:sans-serif; color:black;">Make a New Start with Hair
+                Transplant
+            <p style="color: black;">Maximum Grafts <span style="color:blue">/</span> 100% Result <span
+                    style="color:blue">/</span> Hygienically</p>
+            </p>
+        </div>
+    </nav> -->
+
+    <section class="hero-wrap hero-wrap-2"
+        style="background-image: url(&quot;/public/images/bannerBG.jpg&quot;); background-position: 50% 0%;"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay2"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-2">
+                    <a href="/">
+                        <img src="/public/images/homeLogo.png" width="220" height="220" class="d-inline-block align-top"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-md-10 text-center fadeInUp">
+                    <h4 class="mb-2 bread" id="sloganText"></h4>
+                    <p class="breadcrumbs" style="color: white;" id="sloganSubText"></p>
+                </div>
+            </div>
+        </div>
+    </section>
     <nav class="navbar navbar-expand-lg svkn-navbar-dark bg-dark" id="navbar">
         <div class="container d-flex align-items-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
@@ -127,6 +166,9 @@
                     <li class="nav-item"><a id="homeBannerSSS" href="/sss" class="nav-link"></a></li>
                     <li class="nav-item"><a id="homeBannerBlog" href="/blog" class="nav-link"></a></li>
                     <li class="nav-item"><a id="homeBannerContact" href="/iletisim" class="nav-link"></a></li>
+                    <li class="nav-item"><a id="homeBannerHizmetler" href="/hizmetler" class="nav-link"></a>
+                    </li>
+                    <li class="nav-item"><a id="homeBannerUrunlerimiz" href="/urunlerimiz" class="nav-link"></a></li>
                 </ul>
             </div>
         </div>
@@ -134,64 +176,74 @@
 
     <%-body%>
 
-    <footer class="svkn-footer bg-dark svkn-section">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md">
-                    <div class="svkn-footer-widget mb-5">
-                        <h2 class="svkn-heading-2 svkn-logo"><%-baslik1%> <span><%-baslik2%></span></h2>
-                        <p id="homeFooterFirstText"></p>
+    <footer class="svkn-footer bg-dark svkn-section footerBg">
+        <b>
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <div class="svkn-footer-widget mb-5">
+                            <h2 class="svkn-heading-2 svkn-logo"><img height="256" width="256"
+                                    src="/public/images/homeLogo.png"></span></h2>
+                            <p id="homeFooterFirstText"></p>
+                        </div>
+                        <div class="svkn-footer-widget mb-5">
+                            <h2 id="homeFooterHaveAQuestion" class="svkn-heading-2"></h2>
+                            <div class="block-23 mb-3">
+                                <ul>
+                                    <li><span class="icon ion-md-help"></span>
+                                        <span id="homeFooterWpText" class="text"></span>
+                                    </li>
+                                    <li><span class="icon ion-md-tablet-portrait"></span><span class="text">
+                                            <a href="tel:90<%-telefon%>">+90<%-telefon%></a></span></li>
+                                    <li><a href="/iletisim"><span class="icon ion-md-mail-open"></span><span
+                                                class="text"><%-eposta%></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="svkn-footer-widget mb-5">
-                        <h2 id="homeFooterHaveAQuestion" class="svkn-heading-2"></h2>
-                        <div class="block-23 mb-3">
-                            <ul>
-                                <li><span class="icon ion-md-help"></span>
-                                    <span id="homeFooterWpText" class="text"></span></li>
-                                <li><span class="icon ion-md-tablet-portrait"></span><span class="text">
-                                        <a href="tel:90<%-telefon%>">+90<%-telefon%></a></span></li>
-                                <li><a href="/iletisim"><span class="icon ion-md-mail-open"></span><span
-                                            class="text"><%-eposta%></span></a></li>
+                    <div class="col-md-4">
+                        <div class="svkn-footer-widget mb-5 ml-md-4">
+                            <h2 id="homeFooterLinks" class="ftco-heading-2"></h2>
+                            <ul class="list-unstyled">
+                                <li><a href="/"><span class="ion-ios-arrow-round-forward mr-2"></span><label
+                                            style="cursor: pointer;" id="homeFooterHomepage"></label></a></li>
+                                <li><a href="/sss"><span class="ion-ios-arrow-round-forward mr-2"></span><label
+                                            style="cursor: pointer;" id="homeFooterSSS"></label></a>
+                                </li>
+                                <li><a href="/blog"><span class="ion-ios-arrow-round-forward mr-2"></span><label
+                                            style="cursor: pointer;" id="homeFooterBlog"></label></a>
+                                </li>
+                                <li><a href="/iletisim"><span class="ion-ios-arrow-round-forward mr-2"></span><label
+                                            style="cursor: pointer;" id="homeFooterContact"></label></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="svkn-footer-widget mb-5 ml-md-4">
+                            <h2 id="homeFooterServices" class="svkn-heading-2"></h2>
+                            <ul class="list-unstyled">
+                                <li><a href="/hizmetler"><span class="ion-ios-arrow-round-forward mr-2"></span><span
+                                            id="footerMethods1"></span></a>
+                                </li>
+                                <li><a href="/hizmetler"><span class="ion-ios-arrow-round-forward mr-2"></span><span
+                                            id="footerMethods2"></span></a>
+                                </li>
+                                <li><a href="/hizmetler"><span class="ion-ios-arrow-round-forward mr-2"></span><span
+                                            id="footerMethods3"></span></a></li>
+                                <li><a href="/hizmetler"><span class="ion-ios-arrow-round-forward mr-2"></span><span
+                                            id="footerMethods4"></span></a></li>
+                                <li><a href="/hizmetler"><span class="ion-ios-arrow-round-forward mr-2"></span><span
+                                            id="footerMethods5"></span></a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-md">
-                    <div class="svkn-footer-widget mb-5 ml-md-4">
-                        <h2 id="homeFooterLinks" class="ftco-heading-2"></h2>
-                        <ul class="list-unstyled">
-                            <li><a href="/"><span class="ion-ios-arrow-round-forward mr-2"></span><label
-                                        id="homeFooterHomepage"></label></a></li>
-                            <li><a href="/sss"><span class="ion-ios-arrow-round-forward mr-2"></span><label
-                                        id="homeFooterSSS"></label></a>
-                            </li>
-                            <li><a href="/blog"><span class="ion-ios-arrow-round-forward mr-2"></span><label
-                                        id="homeFooterBlog"></label></a>
-                            </li>
-                            <li><a href="/iletisim"><span class="ion-ios-arrow-round-forward mr-2"></span><label
-                                        id="homeFooterContact"></label></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="svkn-footer-widget mb-5 ml-md-4">
-                        <h2 id="homeFooterServices" class="svkn-heading-2"></h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span><span id="footerMethods1"></span></a>
-                            </li>
-                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span><span id="footerMethods2"></span></a>
-                            </li>
-                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span><span id="footerMethods3"></span></a></li>
-                            <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span><span id="footerMethods4"></span></a></li>
-                        </ul>
+                    <div class="col-md-4">
+                        <div class="svkn-footer-widget mb-5">
+                            <h2 id="homeFooterCookiePolicy" class="svkn-heading-2"></h2>
+                            <p id="homeFooterCookiePolicyText" class="open-hours pl-4"></p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md">
-                    <div class="svkn-footer-widget mb-5">
-                        <h2 id="homeFooterCookiePolicy" class="svkn-heading-2"></h2>
-                        <p id="homeFooterCookiePolicyText" class="open-hours pl-4"></p>
-                    </div>
-                </div>
-            </div>
+        </b>
     </footer>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/public/js/jquery-1.11.3.min.js"></script>
@@ -210,8 +262,11 @@
     <script src="/public/js/intlTelInput.js"></script>
     <script src="/public/js/toastr.js"></script>
     <script src="/public/js/scrollax.min.js"></script>
+
+    <script src="/public/js/system/library/quill.js"></script>
+    <script src="/public/js/system/library/moment.min.js"></script>
     <script src="/public/js/system/main.js"></script>
 </body>
 
 </html>
-<%}%>
+<%}%> 

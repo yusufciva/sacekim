@@ -2,11 +2,11 @@ const permissions = require('./permissions');
 const htmlspecialchar = require('htmlspecialchars');
 const moment = require('moment'); moment.locale('tr');
 
-let schemaAction = ['Kullanici','SistemMail',"GenelAyarlamalar","AnasayfaSlider","HizmetYorumlari","OncesiSonrasi","BlogYazilari","IletisimTalebi","SacAnalizTalebi"];
+let schemaAction = ['Kullanici','SistemMail',"GenelAyarlamalar","AnasayfaSlider","Urunlerimiz","OncesiSonrasi","BlogYazilari","IletisimTalebi","SacAnalizTalebi"];
 let schema = [];
 for (let i = 0; i < schemaAction.length; i++) {
     let key = schemaAction[i];
-    schema[key] = require('../models/sacEkim/schema' + key + '');
+    schema[key] = require('../models/'+process.env.MODULE_NAME+'/schema' + key + '');
 };
 const dataFormatCreator = (arr, format, callback) => {
     if (format) {

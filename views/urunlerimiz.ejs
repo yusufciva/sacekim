@@ -4,16 +4,16 @@
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 text-center">
-                <h1 id="blogHeader" class="mb-2 bread"></h1>
+                <h1 id="urunlerimizHeader" class="mb-2 bread"></h1>
                 <p class="breadcrumbs">
                     <span class="mr-2">
                         <a href="/">
-                            <span id="blogHaderHome"></span>
+                            <span id="urunlerimizHaderHome"></span>
                             <i class="ion-ios-arrow-forward"></i>
                         </a>
                     </span>
                     <span>
-                        <span id="blogHaderText"></span>
+                        <span id="urunlerimizHeaderSub"></span>
                         <i class="ion-ios-arrow-forward"></i>
                     </span>
                 </p>
@@ -24,7 +24,7 @@
 <div data-disable ="disabled" style="display:none;" id="quills"></div>
 <section class="svkn-section bg-light">
     <div class="container">
-        <div id="blogs" class="row">
+        <div id="urunler" class="row">
         </div>
         <!-- <div class="row no-gutters my-5">
             <div class="col text-center">
@@ -48,41 +48,41 @@
 <script src="/public/js/system/library/quill.js"></script>
 <script src="/public/js/system/library/moment.min.js"></script>
 <script>
-let BlogsLang = navigator.language || navigator.userLanguage;
+let urunlerLang = navigator.language || navigator.userLanguage;
 if (!Cookies.get('lang')) {
-    if (BlogsLang == 'tr') {
+    if (urunlerLang == 'tr') {
         Cookies.set('lang', 'TR');
         currentLang = 'TR';
     }
-    else if (BlogsLang == 'en') {
+    else if (urunlerLang == 'en') {
         Cookies.set('lang', 'EN');
         currentLang = 'EN';
     }
-    else if (BlogsLang == 'ru') {
+    else if (urunlerLang == 'ru') {
         Cookies.set('lang', 'RU');
         currentLang = 'RU';
     }
-    else if (BlogsLang == 'fr') {
+    else if (urunlerLang == 'fr') {
         Cookies.set('lang', 'FR');
         currentLang = 'FR';
     }
-    else if (BlogsLang == 'ar') {
+    else if (urunlerLang == 'ar') {
         Cookies.set('lang', 'AR');
         currentLang = 'AR';
     }
-    else if (BlogsLang == 'pt') {
+    else if (urunlerLang == 'pt') {
         Cookies.set('lang', 'PT');
         currentLang = 'PT';
     }
-    else if (BlogsLang == 'it') {
+    else if (urunlerLang == 'it') {
         Cookies.set('lang', 'IT');
         currentLang = 'IT';
     }
-    else if (BlogsLang == 'de') {
+    else if (urunlerLang == 'de') {
         Cookies.set('lang', 'DE');
         currentLang = 'DE';
     }
-    else if (BlogsLang == 'es') {
+    else if (urunlerLang == 'es') {
         Cookies.set('lang', 'ES');
         currentLang = 'ES';
     }
@@ -91,30 +91,25 @@ if (!Cookies.get('lang')) {
         currentLang = 'TR';
     };
 };
-    let blogs = <%-JSON.stringify(blog)%>;
+    let urunler = <%-JSON.stringify(urunler)%>;
     let lang = Cookies.get('lang');
-    for (let i = 0; i < blogs.length; i++) {
+    for (let i = 0; i < urunler.length; i++) {
         let quill = new Quill("#quills", {
             theme: 'snow',
             disable:true
         });
-        quill.setContents((lang == 'TR' ? blogs[i].yaziTR : (lang == 'EN' ? blogs[i].yaziEN : (lang == 'ES' ? blogs[i].yaziES : (lang == 'FR' ? blogs[i].yaziFR : (lang == 'DE' ? blogs[i].yaziDE : (lang == 'IT' ? blogs[i].yaziIT : (lang == 'AR' ? blogs[i].yaziAR : (lang == 'PT' ? blogs[i].yaziPT : blogs[i].yaziRU)))))))));
-        
-        $("#blogs").append(`
+        quill.setContents((lang == 'TR' ? urunler[i].yaziTR : (lang == 'EN' ? urunler[i].yaziEN : (lang == 'ES' ? urunler[i].yaziES : (lang == 'FR' ? urunler[i].yaziFR : (lang == 'DE' ? urunler[i].yaziDE : (lang == 'IT' ? urunler[i].yaziIT : (lang == 'AR' ? urunler[i].yaziAR : (lang == 'PT' ? urunler[i].yaziPT : urunler[i].yaziRU)))))))));
+
+        $("#urunler").append(`
         <div class="col-md-4">
-                <div class="blog-entry">
-                    <a id="`+blogs[i]._id+`" href="/blogicerigi" class="block-20 howBlogText"
-                        style="background-image: url('`+blogs[i].gorsel+`');">
-                        <div class="meta-date text-center p-2">
-                            <span class="day">`+moment().format("DD/MM/YYYY")+`</span>
-                        </div>
+                <div class="urunlerimiz-entry">
+                    <a id="`+urunler[i]._id+`" href="/iletisim" class="block-20 howurunlerimizText"
+                        style="background-image: url('`+urunler[i].gorsel+`');">
                     </a>
                     <div class="text bg-white p-4">
-                        <h3 class="heading"><a href="/blogicerigi" id="`+blogs[i]._id+`" class="howBlogText"><span>` + (lang == 'TR' ? blogs[i].baslikTR : (lang == 'EN' ? blogs[i].baslikEN : (lang == 'ES' ? blogs[i].baslikES : (lang == 'FR' ? blogs[i].baslikFR : (lang == 'DE' ? blogs[i].baslikDE : (lang == 'IT' ? blogs[i].baslikIT : (lang == 'AR' ? blogs[i].baslikAR : (lang == 'PT' ? blogs[i].baslikPT :blogs[i].baslikRU)))))))) + `</a></h3>
-                        <p>`+quill.getText(0,100)+`...</p>
+                        <h3 class="heading"><a href="/iletisim" id="`+urunler[i]._id+`" class="howurunlerimizText"><span>` + (lang == 'TR' ? urunler[i].urunAdiTR : (lang == 'EN' ? urunler[i].urunAdiEN : (lang == 'ES' ? urunler[i].urunAdiES : (lang == 'FR' ? urunler[i].urunAdiFR : (lang == 'DE' ? urunler[i].urunAdiDE : (lang == 'IT' ? urunler[i].urunAdiIT : (lang == 'AR' ? urunler[i].urunAdiAR : (lang == 'PT' ? urunler[i].urunAdiPT :urunler[i].urunAdiRU)))))))) + `</a></h3>
+                        <p>`+(lang == 'TR' ? urunler[i].yaziTR : (lang == 'EN' ? urunler[i].yaziEN : (lang == 'ES' ? urunler[i].yaziES : (lang == 'FR' ? urunler[i].yaziFR : (lang == 'DE' ? urunler[i].yaziDE : (lang == 'IT' ? urunler[i].yaziIT : (lang == 'AR' ? urunler[i].yaziAR : (lang == 'PT' ? urunler[i].yaziPT :urunler[i].yaziRU))))))))+`...</p>
                         <div class="d-flex align-items-center mt-4">
-                            <p class="mb-0"><a href="/blogicerigi" id="`+blogs[i]._id+`" class="btn btn-primary howBlogText"><span style="font-size:36px"
-                                        class="ion-ios-arrow-round-forward"></span></a></p>
                         </div>
                     </div>
                 </div>
@@ -122,8 +117,8 @@ if (!Cookies.get('lang')) {
         `);
         $(".ql-toolbar").remove();
     };
-    $(".howBlogText").click(function () {
-        let blogID = $(this).attr("id");
-        Cookies.set("blogID",blogID);
+    $(".howurunlerimizText").click(function () {
+        let urunlerimizID = $(this).attr("id");
+        Cookies.set("urunlerimizID",urunlerimizID);
     });
 </script>

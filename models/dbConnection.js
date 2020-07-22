@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost:27017/sacEkim', { autoIndex: false, useNewUrlParser: true, useUnifiedTopology: true, });
+let env = process.env;
+mongoose.connect('mongodb://' + env.MONGODB_USERNAME + ':' + env.MONGODB_PASSWORD + '@' + env.MONGODB_HOST + ':27017/' + env.MONGODB_DB + '?authSource=admin', { autoIndex: false, useNewUrlParser: true, useUnifiedTopology: true, });
 var db = mongoose.connection;
 db.on('error', () => {
     console.log('MongoDB Connection error!')
