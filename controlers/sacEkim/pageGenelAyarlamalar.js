@@ -1,14 +1,13 @@
 const htmlspecialchar = require('htmlspecialchars');
 const moment = require('moment'); moment().locale('tr');
 const queryManager = require('../queryManager');
-const queryString = 'baslikKisim1 baslikKisim2 telefon eposta';
+const queryString = 'kurumAdi telefon eposta';
 const schemaGenelAyarlamalar = require('../../models/sacEkim/schemaGenelAyarlamalar');
 
 const Click = (data, actionName, callback) => {
     let tableData = [{
         _id: '',
-        baslikKisim1: '',
-        baslikKisim2: '',
+        kurumAdi: '',
         telefon: '',
         eposta: '',
     }];
@@ -29,13 +28,13 @@ const Insert = (data, actionName, callback) => {
     for (let i = 0; i < clientData.length; i++) {
         clientData[i] = htmlspecialchar(clientData[i]);
     };
-    let uniqueFields = { };
+    let uniqueFields = {};
     let newData = new schemaGenelAyarlamalar({
-        kurumAdi:clientData[0],
+        kurumAdi: clientData[0],
         telefon: clientData[1],
         eposta: clientData[2],
     });
-    let returnDataFormat = ['_id', 'logo', 'kurumAdi', 'telefon', 'eposta'];
+    let returnDataFormat = ['_id', 'kurumAdi', 'telefon', 'eposta'];
     delete data['data'];
     let json = {
         request: data, actionName,
@@ -54,7 +53,7 @@ const Update = (data, actionName, callback) => {
     for (let i = 0; i < clientData.length; i++) {
         clientData[i] = htmlspecialchar(clientData[i]);
     };
-    let returnDataFormat = ['_id', 'baslikKisim1', 'telefon', 'eposta'];
+    let returnDataFormat = ['_id', 'kurumAdi', 'telefon', 'eposta'];
     let updateFieldValue = ['', clientData[0], clientData[1], clientData[2]];
     let json = {
         request: data,
@@ -71,8 +70,22 @@ const Update = (data, actionName, callback) => {
         callback(result);
     });
 };
+const Delete = (data, actionName, callback) => {
+    let _id = htmlspecialchar(data.processID);
+    let json = {
+        request: data,
+        actionName,
+        queryJSON: { _id, },
+        querySchema: 'GenelAyarlamalar',
+        dtColLen: 3,
+    };
+    queryManager.Delete(json, (result) => {
+        callback(result);
+    });
+};
 module.exports = {
     Click,
     Insert,
     Update,
+    Delete
 };
