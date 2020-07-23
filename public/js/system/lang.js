@@ -169,8 +169,7 @@ const forTurkish = () => {
     langJSON['thKullaniciGoruntule_username'] = "Kullancı Adı";
     //Genel Ayarlamalar
     langJSON['menuGenelAyarlamalar'] = "Genel Ayarlamalar";
-    langJSON['thGenelAyarlamalar_baslikKisim1'] = "Başlık 1.Kısım";
-    langJSON['thGenelAyarlamalar_baslikKisim2'] = "Başlık 2.Kısım(Mavi)";
+    langJSON['thGenelAyarlamalar_kurumAdi'] = "Kurum Adı";
     langJSON['thGenelAyarlamalar_telefon'] = "Yönlendirilcek Telefon";
     langJSON['thGenelAyarlamalar_eposta'] = "İletişim E-postası";
     //Anasayfa Slider
